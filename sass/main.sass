@@ -1,0 +1,99 @@
+
+@import "vars.sass"
+@import "colors.sass"
+
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+body
+	margin: 0
+
+a
+	text-decoration: none
+
+ul
+	margin: 0
+	padding: 0
+	li
+		list-style-type: none
+
+h1,h3,h4,h4,h5,h6,p
+	margin: 0
+
+img
+	max-width: 100%
+	display: block
+
+header
+	width: 100%
+	padding: 36px 0
+	background-color: transparent
+	position: absolute
+	z-index: 10
+	.logo
+		display: inline-block
+		max-width: 157px
+	.menu
+		display: flex
+		flex-direction: row
+		li
+			padding: 0 20px
+			&:last-of-type
+				padding-right: 0
+			a
+				font-family: 'Avenir Heavy', sans-serif
+				font-weight: 900
+				font-size: 12px
+				line-height: 18px
+				text-transform: uppercase
+				letter-spacing: 0.12em
+	.wrapper-line
+		display: flex
+		justify-content: space-between
+
+
+.main-title
+	font-family: 'AvantGarde Bold', sans-serif
+	font-weight: 700
+	font-size: 60px
+	line-height: 64px
+
+.main
+	&.home
+		background-color: rgba(255, 236, 154, 1)
+		.main-title
+			color: $pink-color
+	.description
+		font-size: 30px
+		line-height: 34px
+	.text-section
+		max-width: 440px
+
+
+//ALWAYS END
+@import "media"
+

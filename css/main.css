@@ -1,0 +1,149 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+h1, h3, h4, h4, h5, h6, p {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+header {
+  width: 100%;
+  padding: 36px 0;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10; }
+  header .logo {
+    display: inline-block;
+    max-width: 157px; }
+  header .menu {
+    display: flex;
+    flex-direction: row; }
+    header .menu li {
+      padding: 0 20px; }
+      header .menu li:last-of-type {
+        padding-right: 0; }
+      header .menu li a {
+        font-family: 'Avenir Heavy', sans-serif;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em; }
+  header .wrapper-line {
+    display: flex;
+    justify-content: space-between; }
+
+.main-title {
+  font-family: 'AvantGarde Bold', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 64px; }
+
+.main.home {
+  background-color: #ffec9a; }
+  .main.home .main-title {
+    color: #ff009e; }
+
+.main .description {
+  font-size: 30px;
+  line-height: 34px; }
+
+.main .text-section {
+  max-width: 440px; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1220px; } }

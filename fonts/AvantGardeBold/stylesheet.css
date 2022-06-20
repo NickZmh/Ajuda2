@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Avant Garde Dailymotion W03 Bd';
+    src: url('AvantGardedailymotionW03-Bd.eot');
+    src: local('Avant Garde Dailymotion W03 Bd'), local('AvantGardedailymotionW03-Bd'),
+        url('AvantGardedailymotionW03-Bd.eot?#iefix') format('embedded-opentype'),
+        url('AvantGardedailymotionW03-Bd.woff2') format('woff2'),
+        url('AvantGardedailymotionW03-Bd.woff') format('woff'),
+        url('AvantGardedailymotionW03-Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
