@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AvantGardeITCbyBT-Medium';
+  src: url('AvantGardeITCbyBT-Medium.eot');
+  src: url('AvantGardeITCbyBT-Medium.eot?#iefix') format('embedded-opentype'),
+       url('AvantGardeITCbyBT-Medium.svg#AvantGardeITCbyBT-Medium') format('svg'),
+       url('AvantGardeITCbyBT-Medium.ttf') format('truetype'),
+       url('AvantGardeITCbyBT-Medium.woff') format('woff'),
+       url('AvantGardeITCbyBT-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,87 @@
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+h1, h3, h4, h4, h5, h6, p {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+.main-title {
+  font-family: 'AvantGarde Bold', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 64px; }
+
+.middle-main-title {
+  font-family: 'AvantGarde Bold', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 50px; }
+
+.small-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase; }
+
+.smallest-title {
+  font-family: 'Avenir Heavy', sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase; }
+
+.description {
+  font-family: 'Avenir Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.01em; }
+
+.button {
+  display: inline-flex;
+  border-radius: 100px;
+  font-family: 'Avenir Medium', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: .2em;
+  padding: 14px 20px;
+  color: white; }
+  .button.small {
+    padding: 14px 18px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 134px; }
+  .button.full-blue {
+    background-color: #1585ff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+  .button.transparent-blue {
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
+    background-color: transparent;
+    border: 1px solid #1585ff;
+    color: #1585ff; }
+  .button.primary-blue {
+    background-color: #3E06DE;
+    letter-spacing: .02em; }
+    .button.primary-blue img {
+      margin-left: 6px; }
+
+.hover-state {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .hover-state:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: .9;
+    transform: translateY(-2px); }
