@@ -31,6 +31,23 @@ body textarea:required:valid
 
 @import "settings.sass"
 
+
+.nav-menu
+	display: flex
+	flex-direction: row
+	li
+		padding: 0 20px
+		&:last-of-type
+			padding-right: 0
+		a
+			display: inline-flex
+			font-family: 'Avenir Heavy', sans-serif
+			font-weight: 900
+			font-size: 12px
+			line-height: 18px
+			text-transform: uppercase
+			letter-spacing: 0.12em
+
 header
 	width: 100%
 	padding: 36px 0
@@ -40,20 +57,6 @@ header
 	.logo
 		display: inline-block
 		max-width: 157px
-	.menu
-		display: flex
-		flex-direction: row
-		li
-			padding: 0 20px
-			&:last-of-type
-				padding-right: 0
-			a
-				font-family: 'Avenir Heavy', sans-serif
-				font-weight: 900
-				font-size: 12px
-				line-height: 18px
-				text-transform: uppercase
-				letter-spacing: 0.12em
 	.wrapper-line
 		display: flex
 		justify-content: space-between
@@ -63,7 +66,20 @@ header
 .main
 	padding: 220px 0 116px
 	&.home
-		background-color: #FFEC9A
+		background-color: #FFFAE6
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			z-index: 5
+			top: 0
+			right: 0
+			width: 95%
+			height: 100%
+			background-image: url('../img/home-background-part.png')
+			background-size: cover
+			background-position: center left
+			background-repeat: no-repeat
 		.main-title,
 		.description
 			color: $pink-color
@@ -92,6 +108,8 @@ header
 			max-width: 700px
 			min-height: 390px
 	.tiles-wrapper
+		position: relative
+		z-index: 10
 		display: flex
 		flex-direction: row
 		justify-content: center
@@ -101,7 +119,7 @@ header
 		.tile-wrapper
 			padding: 0 10px
 			width: 100%
-			max-width: 460px
+			max-width: 468px
 		.tile
 			display: flex
 			flex-direction: row
@@ -114,11 +132,13 @@ header
 				font-family: 'Avenir Medium', sans-serif
 				font-weight: 800
 				color: $blue-medium
+				letter-spacing: 0.02em
 			.button
 				margin-left: 30px
 				img
 					width: 16px
 	.wrapper-content
+		z-index: 10
 		display: flex
 		flex-direction: row
 		justify-content: space-between
@@ -201,6 +221,66 @@ header
 					text-transform: initial
 					color: $black-color
 					letter-spacing: 0.02em
+
+.our-partners
+	padding: 144px 0 96px
+	.middle-main-title
+		text-align: center
+		color: $blue-medium
+		margin-bottom: 38px
+	.grid-section
+		width: 100%
+		max-width: 760px
+		margin-left: -20px
+		margin-right: -20px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
+		.grid-item
+			padding: 0 20px
+			width: 20%
+			margin-bottom: 20px
+			.grid-body
+				background-color: #E2E8F0
+				min-height: 120px
+
+footer
+	background-color: $blue-primary
+	padding: 54px 0
+	.logo
+		display: inline-flex
+		max-width: 156px
+		margin-bottom: 32px
+	.nav-menu
+		flex-direction: column
+		li
+			padding: 0
+			margin-bottom: 12px
+			a
+				color: #fff
+				transition: all 0.2s ease-in-out
+				&:hover
+					opacity: .8
+					transition: all 0.2s ease-in-out
+	.wrapper-line
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+	.right-side
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		.button
+			margin-bottom: 28px
+		.simple-text
+			font-family: 'Avenir Medium', sans-serif
+			font-weight: 500
+			font-size: 12px
+			line-height: 18px
+			letter-spacing: 0.03em
+			color: #fff
+			margin-bottom: 12px
 
 
 //ALWAYS END

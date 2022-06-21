@@ -100,6 +100,9 @@ img {
     letter-spacing: .02em; }
     .button.primary-blue img {
       margin-left: 6px; }
+  .button.medium-blue {
+    background-color: #1585ff;
+    letter-spacing: 0.02em; }
 
 .hover-state {
   -webkit-transition: all 0.3s ease-in-out;
@@ -110,6 +113,148 @@ img {
     opacity: .9;
     transform: translateY(-2px); }
 
+.form-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  max-width: 450px; }
+  .form-block .form-all {
+    border: none;
+    margin: 0;
+    background-color: transparent; }
+  .form-block .form-section {
+    padding: 32px 36px;
+    background-color: #ff33b1;
+    border-radius: 10px; }
+    .form-block .form-section .form-header-group {
+      padding: 0;
+      margin: 0;
+      border: none; }
+    .form-block .form-section .form-header {
+      font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.01em; }
+    .form-block .form-section .form-subHeader {
+      margin-bottom: 12px; }
+    .form-block .form-section .form-subHeader,
+    .form-block .form-section .form-label {
+      font-family: "Avenir Medium", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.01em; }
+    .form-block .form-section .form-textbox {
+      font-family: "Avenir Regular", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      height: 34px;
+      color: #94a3b8;
+      padding-left: 10px !important; }
+      .form-block .form-section .form-textbox:focus-visible {
+        outline: none; }
+      .form-block .form-section .form-textbox::-webkit-input-placeholder {
+        font-size: 16px;
+        color: #94a3b8; }
+      .form-block .form-section .form-textbox:-moz-placeholder {
+        font-size: 16px;
+        color: #94a3b8; }
+      .form-block .form-section .form-textbox::-moz-placeholder {
+        font-size: 16px;
+        color: #94a3b8; }
+      .form-block .form-section .form-textbox:-ms-input-placeholder {
+        font-size: 16px;
+        color: #94a3b8; }
+      .form-block .form-section .form-textbox::placeholder {
+        font-size: 16px;
+        color: #94a3b8; }
+    .form-block .form-section .form-line {
+      margin: 0 !important;
+      padding: 0; }
+      .form-block .form-section .form-line.little-indent {
+        margin-bottom: 10px !important; }
+    .form-block .form-section .form-label-top {
+      margin-bottom: 0; }
+    .form-block .form-section .form-line-error {
+      background-color: transparent; }
+    .form-block .form-section .form-error-message {
+      margin-top: 5px;
+      padding: 3px 8px 3px 18px;
+      font-size: 12px;
+      line-height: 14px; }
+    .form-block .form-section .bottom-horizont-section {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 14px; }
+      .form-block .form-section .bottom-horizont-section .form-radio-wrapper {
+        width: 250px; }
+        .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-label {
+          font-family: "Avenir Medium", sans-serif;
+          font-weight: 500;
+          margin-bottom: 8px; }
+        .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item {
+          display: flex;
+          margin-bottom: 8px; }
+          .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item:last-of-type {
+            margin-bottom: 0; }
+          .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item label {
+            min-height: initial;
+            font-family: "Avenir Regular", sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            padding-left: 18px; }
+            .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item label::before {
+              top: 1px;
+              width: 12px;
+              height: 12px;
+              background-color: transparent; }
+            .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item label::after {
+              width: 8px;
+              height: 8px;
+              top: 3px;
+              left: 2px;
+              background-color: white; }
+      .form-block .form-section .bottom-horizont-section .form-input-wide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+      .form-block .form-section .bottom-horizont-section .form-buttons-wrapper {
+        margin: 0;
+        padding: 0;
+        border: none; }
+      .form-block .form-section .bottom-horizont-section .form-button-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: initial; }
+        .form-block .form-section .bottom-horizont-section .form-button-wrapper .button {
+          min-width: initial;
+          margin-left: 0;
+          font-family: "Avenir Medium", sans-serif;
+          font-weight: 500;
+          border: none; }
+
+.nav-menu {
+  display: flex;
+  flex-direction: row; }
+  .nav-menu li {
+    padding: 0 20px; }
+    .nav-menu li:last-of-type {
+      padding-right: 0; }
+    .nav-menu li a {
+      display: inline-flex;
+      font-family: 'Avenir Heavy', sans-serif;
+      font-weight: 900;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em; }
+
 header {
   width: 100%;
   padding: 36px 0;
@@ -119,20 +264,6 @@ header {
   header .logo {
     display: inline-block;
     max-width: 157px; }
-  header .menu {
-    display: flex;
-    flex-direction: row; }
-    header .menu li {
-      padding: 0 20px; }
-      header .menu li:last-of-type {
-        padding-right: 0; }
-      header .menu li a {
-        font-family: 'Avenir Heavy', sans-serif;
-        font-weight: 900;
-        font-size: 12px;
-        line-height: 18px;
-        text-transform: uppercase;
-        letter-spacing: 0.12em; }
   header .wrapper-line {
     display: flex;
     justify-content: space-between; }
@@ -140,7 +271,20 @@ header {
 .main {
   padding: 220px 0 116px; }
   .main.home {
-    background-color: #FFEC9A; }
+    background-color: #FFFAE6;
+    position: relative; }
+    .main.home::after {
+      content: '';
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      right: 0;
+      width: 95%;
+      height: 100%;
+      background-image: url("../img/home-background-part.png");
+      background-size: cover;
+      background-position: center left;
+      background-repeat: no-repeat; }
     .main.home .main-title,
     .main.home .description {
       color: #ff009e; }
@@ -168,6 +312,8 @@ header {
     max-width: 700px;
     min-height: 390px; }
   .main .tiles-wrapper {
+    position: relative;
+    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -177,7 +323,7 @@ header {
     .main .tiles-wrapper .tile-wrapper {
       padding: 0 10px;
       width: 100%;
-      max-width: 460px; }
+      max-width: 468px; }
     .main .tiles-wrapper .tile {
       display: flex;
       flex-direction: row;
@@ -189,12 +335,14 @@ header {
       .main .tiles-wrapper .tile .tile-title {
         font-family: 'Avenir Medium', sans-serif;
         font-weight: 800;
-        color: #1585ff; }
+        color: #1585ff;
+        letter-spacing: 0.02em; }
       .main .tiles-wrapper .tile .button {
         margin-left: 30px; }
         .main .tiles-wrapper .tile .button img {
           width: 16px; }
   .main .wrapper-content {
+    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
@@ -278,14 +426,110 @@ header {
           color: #0C012C;
           letter-spacing: 0.02em; }
 
+.our-partners {
+  padding: 144px 0 96px; }
+  .our-partners .middle-main-title {
+    text-align: center;
+    color: #1585ff;
+    margin-bottom: 38px; }
+  .our-partners .grid-section {
+    width: 100%;
+    max-width: 760px;
+    margin-left: -20px;
+    margin-right: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .our-partners .grid-section .grid-item {
+      padding: 0 20px;
+      width: 20%;
+      margin-bottom: 20px; }
+      .our-partners .grid-section .grid-item .grid-body {
+        background-color: #E2E8F0;
+        min-height: 120px; }
+
+footer {
+  background-color: #3E06DE;
+  padding: 54px 0; }
+  footer .logo {
+    display: inline-flex;
+    max-width: 156px;
+    margin-bottom: 32px; }
+  footer .nav-menu {
+    flex-direction: column; }
+    footer .nav-menu li {
+      padding: 0;
+      margin-bottom: 12px; }
+      footer .nav-menu li a {
+        color: #fff;
+        transition: all 0.2s ease-in-out; }
+        footer .nav-menu li a:hover {
+          opacity: .8;
+          transition: all 0.2s ease-in-out; }
+  footer .wrapper-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  footer .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    footer .right-side .button {
+      margin-bottom: 28px; }
+    footer .right-side .simple-text {
+      font-family: 'Avenir Medium', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.03em;
+      color: #fff;
+      margin-bottom: 12px; }
+
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1400px) {
+  .main.home::after {
+    width: 100%; } }
+
+@media only screen and (max-width: 1300px) {
+  .main.home::after {
+    background-position-x: -150px; } }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   /**/ }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  /**/
+  .button.small {
+    padding: 12px 16px; }
+  .main.home .text-section {
+    max-width: 340px; }
+  .main .main-title {
+    font-size: 56px;
+    line-height: 60px; }
+  .main .description {
+    font-size: 28px;
+    line-height: 32px; }
+  .main .media-section.video {
+    min-height: 280px;
+    height: 280px; }
+  .main .buttons-wrapper {
+    margin-top: 40px; }
+  .main .tiles-wrapper .tile {
+    flex-direction: column; }
+    .main .tiles-wrapper .tile .tile-title {
+      text-align: center;
+      color: #ff009e;
+      text-transform: initial;
+      margin-bottom: 14px;
+      font-size: 22px;
+      line-height: 26px; }
+    .main .tiles-wrapper .tile .button {
+      margin-left: 0; }
+  .main .tiles-wrapper .tile-wrapper {
+    max-width: 270px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -328,8 +572,10 @@ header {
   /**/ }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /**/
+  .container, .container-md, .container-sm {
+    max-width: 780px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -341,8 +587,10 @@ header {
     max-width: 1220px; } }
 
 @media only screen and (min-width: 1400px) {
+  footer .container,
   header .container {
     max-width: 100%; }
+  footer .wrapper-line,
   header .wrapper-line {
     padding-left: 50px;
     padding-right: 50px; } }

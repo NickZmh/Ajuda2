@@ -1,16 +1,66 @@
 //@import "bourbon"
 
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1400px)
+	.main
+		&.home
+			&::after
+				width: 100%
+
+@media only screen and (max-width : 1300px)
+	.main
+		&.home
+			&::after
+				background-position-x: -150px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
-
+	//.main
+		//.main-title
+			//font-size: px
+	//.main
+		//padding: 200px 0 100px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
 
+	.button
+		&.small
+			padding: 12px 16px
+
+	.main
+		&.home
+			.text-section
+				max-width: 340px
+		.main-title
+			font-size: 56px
+			line-height: 60px
+		.description
+			font-size: 28px
+			line-height: 32px
+		//.wrapper-content
+		//	align-items: flex-start
+		.media-section
+			&.video
+				min-height: 280px
+				height: 280px
+		.buttons-wrapper
+			margin-top: 40px
+		.tiles-wrapper
+			.tile
+				flex-direction: column
+				.tile-title
+					text-align: center
+					color: $pink-color
+					text-transform: initial
+					margin-bottom: 14px
+					font-size: 22px
+					line-height: 26px
+				.button
+					margin-left: 0
+			.tile-wrapper
+				max-width: 270px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -60,8 +110,10 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
+@media only screen and (min-width : 768px) and (max-width: 992px)
 	/**/
+	.container, .container-md, .container-sm
+		max-width: 780px
 
 
 /* Medium Devices, Desktops */
@@ -75,6 +127,7 @@
 		max-width: 1220px
 
 @media only screen and (min-width : 1400px)
+	footer,
 	header
 		.container
 			max-width: 100%
