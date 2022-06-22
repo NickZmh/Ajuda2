@@ -21,24 +21,63 @@
 			//font-size: px
 	//.main
 		//padding: 200px 0 100px
+
+	.standard-p-block
+		padding: 160px 0 160px
+
+
+	.main
+		.media-section
+			&.video
+				min-height: 350px
+
+	.benefits
+		.content-block
+			min-width: 440px
+			padding: 140px 0 140px
+		.img-block
+			img
+				max-width: 500px
+		.form-block
+			padding: 40px 30px
+
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+
+	.standard-p-block
+		padding: 140px 0 120px
+
+	.middle-main-title
+		font-size: 42px
+		line-height: 46px
+
+	.description
+		font-size: 18px
+		line-height: 28px
 
 	.button
 		&.small
 			padding: 12px 16px
 
+	.nav-menu
+		li
+			padding: 0 16px
 	.main
 		&.home
 			.text-section
 				max-width: 340px
+				padding-right: 20px
+			&::after
+				background-position-x: -340px
 		.main-title
-			font-size: 56px
-			line-height: 60px
+			font-size: 52px
+			line-height: 56px
 		.description
-			font-size: 28px
-			line-height: 32px
+			font-size: 26px
+			line-height: 30px
 		//.wrapper-content
 		//	align-items: flex-start
 		.media-section
@@ -62,33 +101,378 @@
 			.tile-wrapper
 				max-width: 270px
 
+	.how-it-works
+		.tiles-wrapper
+			margin-top: 170px
+			margin-left: -8px
+			margin-right: -8px
+			.tile
+				padding: 0 8px
+				.tile-body
+					padding: 0 20px 35px
+					img
+						top: -74px
+						min-height: 160px
+						height: 160px
+					.smallest-title
+						margin-top: 30px
+
+
+	.benefits
+		.content-block
+			min-width: 380px
+			position: relative
+			z-index: 50
+		.img-block
+			img
+				margin-left: -55px
+				max-width: 480px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
-	/*Disable Animation on Mobile Devices*/
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
+
+	.nav-menu
+		display: none
+
+	.smallest-title
+		font-size: 18px
+		line-height: 22px
+
+	.standard-p-block
+		padding: 120px 0 100px
+
+	.top_mnu
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		background-color: $light-purple
+		background-image: url("../img/menu-bg-snippet.png")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		z-index: 100
+		width: 100%
+		height: 100%
+		ul
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			li
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				text-align: center
+				width: 100%
+				margin-bottom: 24px
+				&:nth-child(1) a
+					-webkit-animation-duration: 0.5s
+					animation-duration: 0.5s
+				&:nth-child(2) a
+						-webkit-animation-duration: 1s
+						animation-duration: 1s
+				&:nth-child(3) a
+						-webkit-animation-duration: 1.5s
+						animation-duration: 1.5s
+				&:nth-child(4) a
+						-webkit-animation-duration: 2s
+						animation-duration: 2s
+				&:nth-child(5) a
+					-webkit-animation-duration: 2.5s
+					animation-duration: 2.5s
+				&:last-of-type
+					margin-bottom: 0
+				a
+					display: flex
+					font-family: 'AvantGarde Bold', sans-serif
+					font-weight: 700
+					color: #fff
+					font-size: 30px
+					line-height: 34px
+					letter-spacing: 0.01em
+					&.menu-button
+						position: absolute
+						bottom: 0
+						font-family: 'Avenir Heavy', sans-serif
+						font-weight: 900
+						font-size: 12px
+						line-height: 18px
+						margin-top: 80px
+						margin-bottom: 56px
+						text-transform: uppercase
+						-webkit-animation-duration: 3s
+						animation-duration: 3s
+					span
+						display: block
+						position: relative
+						top: -0px
+						left: 0
+						height: 100%
+						-webkit-transition: all 0.5s ease-in-out
+						transition: all 0.5s ease-in-out
+
+
+
+	.main
+		padding: 180px 0 100px
+		.wrapper-content
+			flex-direction: column
+		&.home
+			&::after
+				background-position-x: -680px
+			.text-section
+				//max-width: 100%
+				padding-right: 0
+			.description
+				font-size: 24px
+				line-height: 28px
+		.tiles-wrapper
+			margin-top: 60px
+			.tile
+				padding: 32px 42px
+				.tile-title
+					font-size: 20px
+		.main-title
+			font-size: 50px
+			line-height: 54px
+		.buttons-wrapper
+			margin-top: 38px
+			margin-bottom: 56px
+			.button
+				margin-right: 16px
+
+	.benefits
+		.content-block
+			padding: 100px 0 100px
+			min-width: initial
+			width: 100%
+			.middle-main-title
+				max-width: 400px
+		.img-block
+			display: none
+		.form-block
+			.img-snippet
+				display: flex
+
+	.how-it-works
+		.tiles-wrapper
+			margin-top: 150px
+			flex-direction: column
+			.tile
+				margin-bottom: 48px
+				&:nth-child(2)
+					.tile-body
+						flex-direction: row-reverse
+						.smallest-title
+							margin-right: 24px
+							margin-left: 0
+							text-align: right
+				.tile-body
+					position: relative
+					flex-direction: row
+					padding: 20px 30px
+					img
+						position: relative
+						top: -10px
+						min-height: 140px
+						height: 140px
+					.smallest-title
+						text-align: left
+						margin-top: 0
+						font-size: 18px
+						line-height: 22px
+						margin-left: 24px
+						max-width: 152px
+
+
+	///*Disable Animation on Mobile Devices*/
+	//.animated
+	//	/*CSS transitions*/
+	//	-o-transition-property: none !important
+	//	-moz-transition-property: none !important
+	//	-ms-transition-property: none !important
+	//	-webkit-transition-property: none !important
+	//	transition-property: none !important
+	//	/*CSS transforms*/
+	//	-o-transform: none !important
+	//	-moz-transform: none !important
+	//	-ms-transform: none !important
+	//	-webkit-transform: none !important
+	//	transform: none !important
+	//	/*CSS animations*/
+	//	-webkit-animation: none !important
+	//	-moz-animation: none !important
+	//	-o-animation: none !important
+	//	-ms-animation: none !important
+	//	animation: none !important
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px)
+
+	.middle-main-title
+		font-size: 36px
+		line-height: 42px
+
+	.description
+		font-size: 16px
+		line-height: 26px
+
+	.standard-p-block
+		padding: 100px 0 80px
+
+	header
+		padding: 12px 0
+		.logo
+			max-width: 101px
+		.wrapper-line
+			align-items: center
+	.main
+		padding: 160px 0 90px
+		&.home
+			&::after
+				background-position-x: -720px
+		.tiles-wrapper
+			.tile
+				padding: 24px
+				.tile-title
+					max-width: 148px
+		.main-title
+			margin-bottom: 16px
+		.media-section
+			&.video
+				min-height: 240px
+				height: 240px
+		.buttons-wrapper
+			margin-top: 30px
+	.benefits
+		.content-block
+			padding: 70px 0 70px
+			.middle-main-title
+				max-width: 360px
+			.description
+				max-width: 240px
+		.form-block
+			padding: 24px 20px
+			iframe
+				width: 100%
+
+	.how-it-works
+		.content-wrapper
+			align-items: flex-start
+			.description
+				text-align: left
+		.middle-main-title
+			margin-bottom: 20px
+		.tiles-wrapper
+			margin-top: 140px
+			.tile
+				.tile-body
+					padding: 22px 30px
+					img
+						//position: relative
+						top: 0px
+						min-height: 120px
+						height: 120px
+					.smallest-title
+						font-size: 16px
+						line-height: 22px
+						margin-left: 20px
+						max-width: 142px
+
 @media only screen and (max-width : 480px)
+
+	.middle-main-title
+		font-size: 30px
+		line-height: 34px
+
+	.description
+		line-height: 24px
+
+	.button
+		&.small
+			font-size: 12px
+			line-height: 18px
+			letter-spacing: .03em
+			padding: 8px 16px
+
+	.standard-p-block
+		padding: 80px 0 60px
+
+	.top_mnu
+		ul
+			justify-content: flex-end
+			li
+				a
+					&.menu-button
+						position: relative
+
+	header
+		.menu-button
+			font-size: 12px
+	.main
+		padding: 110px 0 60px
+		&.home
+			&::after
+				background-position-x: -640px
+			.text-section
+				max-width: 100%
+			.description
+				font-size: 20px
+				line-height: 24px
+				max-width: 280px
+		.main-title
+			font-size: 46px
+			line-height: 50px
+		.media-section
+			&.video
+				min-height: 180px
+				height: 180px
+		.buttons-wrapper
+			flex-direction: column
+			margin-top: 30px
+			.button
+				margin-right: 0
+				&:first-of-type
+					margin-bottom: 12px
+	.main
+		.tiles-wrapper
+			margin-left: -6px
+			margin-right: -6px
+			.tile-wrapper
+				padding: 0 6px
+			.tile
+				padding: 20px
+				.tile-title
+					max-width: 120px
+					font-size: 16px
+					line-height: 20px
+					margin-bottom: 12px
+
+	.benefits
+		.content-block
+			padding: 60px 0 80px
+			.middle-main-title
+				margin-bottom: 10px
+				max-width: 280px
+		.form-block
+			.img-snippet
+				top: -156px
+				width: 110px
+
+	.how-it-works
+		.tiles-wrapper
+			margin-top: 100px
+			.tile
+				.tile-body
+					img
+						top: 7px
+						min-height: 105px
+						height: 105px
+
+
 	/**/
 
 
@@ -110,6 +494,12 @@
 
 
 /* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+
+	header
+		.menu-button
+			display: none
+
 @media only screen and (min-width : 768px) and (max-width: 992px)
 	/**/
 	.container, .container-md, .container-sm

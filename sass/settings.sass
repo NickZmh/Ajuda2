@@ -51,6 +51,8 @@ img
 
 .button
     display: inline-flex
+    justify-content: center
+    align-items: center
     border-radius: 100px
     font-family: 'Avenir Medium', sans-serif
     font-weight: 500
@@ -67,11 +69,26 @@ img
     &.full-blue
         background-color: $blue-color
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1)
+        border: 1px solid transparent
+        &.hover-change
+            transition: all .5s ease-in-out
+            &:hover
+                transition: all .5s ease-in-out
+                border: 1px solid $blue-color
+                background-color: transparent
+                color: $blue-color
     &.transparent-blue
         filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1))
         background-color: transparent
         border: 1px solid $blue-color
         color: $blue-color
+        &.hover-change
+            transition: all .5s ease-in-out
+            &:hover
+                transition: all .5s ease-in-out
+                border: 1px solid transparent
+                background-color: $blue-color
+                color: white
     &.primary-blue
         background-color: $blue-primary
         letter-spacing: .02em
@@ -91,136 +108,111 @@ img
         opacity: .9
         transform: translateY(-2px)
 
+.bg-img-settings
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        z-index: 15
+        left: 0
+        //top: 0
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+
+.standard-p-block
+    padding: 200px 0 220px
 
 
 //inserted forms
 
-.form-block
-    display: flex
-    flex-direction: column
-    margin-top: 40px
-    max-width: 450px
-    .form-all
-        border: none
-        margin: 0
-        background-color: transparent
-    .form-section
-        padding: 32px 36px
-        background-color: rgba(255, 51, 177, 1)
-        border-radius: 10px
-        .form-header-group
-            padding: 0
-            margin: 0
-            border: none
-        .form-header
-            font-family: 'itc-avant-garde-gothic-pro', sans-serif
-            font-weight: 700
-            //color: $white-color
-            font-size: 24px
-            line-height: 28px
-            letter-spacing: 0.01em
-        .form-subHeader
-            margin-bottom: 12px
-        .form-subHeader,
-        .form-label
-            font-family: "Avenir Medium", sans-serif
-            font-weight: 500
-            font-size: 14px
-            line-height: 20px
-            //color: $white-color
-            letter-spacing: 0.01em
-        .form-textbox
-            font-family: "Avenir Regular", sans-serif
-            font-weight: 400
-            font-size: 16px
-            line-height: 24px
-            letter-spacing: 0.01em
-            height: 34px
-            color: rgba(148, 163, 184, 1)
-            padding-left: 10px!important
-            &:focus-visible
-                outline: none
-            &::-webkit-input-placeholder
-                font-size: 16px
-                color: rgba(148, 163, 184, 1)
-            &:-moz-placeholder
-                font-size: 16px
-                color: rgba(148, 163, 184, 1)
-            &::-moz-placeholder
-                font-size: 16px
-                color: rgba(148, 163, 184, 1)
-            &:-ms-input-placeholder
-                font-size: 16px
-                color: rgba(148, 163, 184, 1)
-            &::placeholder
-                font-size: 16px
-                color: rgba(148, 163, 184, 1)
-        .form-line
-            margin: 0!important
-            padding: 0
-            &.little-indent
-                margin-bottom: 10px!important
-        .form-label-top
-            margin-bottom: 0
-        .form-line-error
-            background-color: transparent
-        .form-error-message
-            margin-top: 5px
-            padding: 3px 8px 3px 18px
-            font-size: 12px
-            line-height: 14px
-        .bottom-horizont-section
-            width: 100%
-            display: flex
-            flex-direction: row
-            justify-content: space-between
-            margin-top: 14px
-            .form-radio-wrapper
-                width: 250px
-                .form-label
-                    font-family: "Avenir Medium", sans-serif
-                    font-weight: 500
-                    margin-bottom: 8px
-                .form-radio-item
-                    display: flex
-                    margin-bottom: 8px
-                    &:last-of-type
-                        margin-bottom: 0
-                    label
-                        min-height: initial
-                        font-family: "Avenir Regular", sans-serif
-                        font-size: 14px
-                        line-height: 16px
-                        //color: $white-color
-                        padding-left: 18px
-                        &::before
-                            top: 1px
-                            width: 12px
-                            height: 12px
-                            background-color: transparent
-                            //border-color: $white-color
-                        &::after
-                            width: 8px
-                            height: 8px
-                            top: 3px
-                            left: 2px
-                            background-color: white
-            .form-input-wide
-                display: flex
-                flex-direction: column
-                align-items: flex-start
-            .form-buttons-wrapper
-                margin: 0
-                padding: 0
-                border: none
-            .form-button-wrapper
-                display: flex
-                flex-direction: column
-                justify-content: flex-end
-                width: initial
-                .button
-                    min-width: initial
-                    margin-left: 0
-                    font-family: "Avenir Medium", sans-serif
-                    font-weight: 500
-                    border: none
+
+
+/*custom style form on WEb site - service JOTFORM*/
+//
+//.supernova {
+//    background-color: #fff;
+//    border-radius: 8px;
+//}
+//.form-line-error {
+//    background-color: #fff;
+//}
+//.form-section.page-section {
+//    background-color: #fff
+//}
+//.form-label.form-label-top {
+//    color: #111827!important;
+//    font-size: 14px;
+//    margin-bottom: 6px;
+//    margin-left: 0;
+//    margin-right: 0;
+//}
+//.form-section .form-line {
+//    margin: 0;
+//}
+//.form-section .form-textbox {
+//    height: 40px;
+//    border-radius: 6px;
+//    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+//    border: 1px solid #CBD5E1;
+//}
+//.form-section .form-textbox[placeholder] {
+//    color: rgba(148, 163, 184, 1);
+//    font-size: 14px !important;
+//    letter-spacing: 0.01em;
+//}
+//.page-section .form-line {
+//    margin-top: 0!important;
+//    padding-top: 0;
+//    padding-left: 0;
+//    padding-right: 0;
+//    padding-bottom: 12px;
+//}
+//.form-section:last-child {
+//    border-radius: 0;
+//}
+//.form-section .form-line .form-radio-item {
+//    margin-bottom: 4px;
+//}
+//.form-section .form-line .form-radio-item label {
+//    color: #111827!important;
+//    font-weight: 500;
+//    font-size: 14px;
+//    padding-left: 24px;
+//}
+//.form-section .form-line .form-radio-item label:before {
+//    width: 16px;
+//    height: 16px;
+//    border: 1px solid #CBD5E1;
+//    top: 1px;
+//}
+//.form-section .form-line .form-radio-item label:after {
+//    width: 8px;
+//    height: 8px;
+//    top: 5px;
+//    left: 4px;
+//}
+//.form-section .form-line .form-buttons-wrapper {
+//    padding-bottom: 0!important;
+//}
+//.form-section .form-line .form-buttons-wrapper .form-submit-button {
+//    background-color: rgba(62, 6, 222, 1);
+//    font-size: 14px;
+//    padding: 12px 18px;
+//    letter-spacing: 0.02em;
+//    min-width: initial;
+//}
+//.page-section .form-line#id_13 {
+//    width: 70%;
+//    padding-bottom: 5px;
+//}
+//.page-section .form-line#id_14 {
+//    width: 30%;
+//    height: 100%;
+//    display: flex;
+//    align-self: flex-end;
+//    top: -15px;
+//}
+//.page-section .form-line#id_14 .jf-branding {
+//    display: none!important;
+//}

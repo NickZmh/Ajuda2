@@ -50,6 +50,8 @@ img {
 
 .button {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100px;
   font-family: 'Avenir Medium', sans-serif;
   font-weight: 500;
@@ -65,12 +67,27 @@ img {
     max-width: 134px; }
   .button.full-blue {
     background-color: #1585ff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent; }
+    .button.full-blue.hover-change {
+      transition: all .5s ease-in-out; }
+      .button.full-blue.hover-change:hover {
+        transition: all .5s ease-in-out;
+        border: 1px solid #1585ff;
+        background-color: transparent;
+        color: #1585ff; }
   .button.transparent-blue {
     filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
     background-color: transparent;
     border: 1px solid #1585ff;
     color: #1585ff; }
+    .button.transparent-blue.hover-change {
+      transition: all .5s ease-in-out; }
+      .button.transparent-blue.hover-change:hover {
+        transition: all .5s ease-in-out;
+        border: 1px solid transparent;
+        background-color: #1585ff;
+        color: white; }
   .button.primary-blue {
     background-color: #3E06DE;
     letter-spacing: .02em; }
@@ -89,128 +106,18 @@ img {
     opacity: .9;
     transform: translateY(-2px); }
 
-.form-block {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  max-width: 450px; }
-  .form-block .form-all {
-    border: none;
-    margin: 0;
-    background-color: transparent; }
-  .form-block .form-section {
-    padding: 32px 36px;
-    background-color: #ff33b1;
-    border-radius: 10px; }
-    .form-block .form-section .form-header-group {
-      padding: 0;
-      margin: 0;
-      border: none; }
-    .form-block .form-section .form-header {
-      font-family: 'itc-avant-garde-gothic-pro', sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: 0.01em; }
-    .form-block .form-section .form-subHeader {
-      margin-bottom: 12px; }
-    .form-block .form-section .form-subHeader,
-    .form-block .form-section .form-label {
-      font-family: "Avenir Medium", sans-serif;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.01em; }
-    .form-block .form-section .form-textbox {
-      font-family: "Avenir Regular", sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 0.01em;
-      height: 34px;
-      color: #94a3b8;
-      padding-left: 10px !important; }
-      .form-block .form-section .form-textbox:focus-visible {
-        outline: none; }
-      .form-block .form-section .form-textbox::-webkit-input-placeholder {
-        font-size: 16px;
-        color: #94a3b8; }
-      .form-block .form-section .form-textbox:-moz-placeholder {
-        font-size: 16px;
-        color: #94a3b8; }
-      .form-block .form-section .form-textbox::-moz-placeholder {
-        font-size: 16px;
-        color: #94a3b8; }
-      .form-block .form-section .form-textbox:-ms-input-placeholder {
-        font-size: 16px;
-        color: #94a3b8; }
-      .form-block .form-section .form-textbox::placeholder {
-        font-size: 16px;
-        color: #94a3b8; }
-    .form-block .form-section .form-line {
-      margin: 0 !important;
-      padding: 0; }
-      .form-block .form-section .form-line.little-indent {
-        margin-bottom: 10px !important; }
-    .form-block .form-section .form-label-top {
-      margin-bottom: 0; }
-    .form-block .form-section .form-line-error {
-      background-color: transparent; }
-    .form-block .form-section .form-error-message {
-      margin-top: 5px;
-      padding: 3px 8px 3px 18px;
-      font-size: 12px;
-      line-height: 14px; }
-    .form-block .form-section .bottom-horizont-section {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 14px; }
-      .form-block .form-section .bottom-horizont-section .form-radio-wrapper {
-        width: 250px; }
-        .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-label {
-          font-family: "Avenir Medium", sans-serif;
-          font-weight: 500;
-          margin-bottom: 8px; }
-        .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item {
-          display: flex;
-          margin-bottom: 8px; }
-          .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item:last-of-type {
-            margin-bottom: 0; }
-          .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item label {
-            min-height: initial;
-            font-family: "Avenir Regular", sans-serif;
-            font-size: 14px;
-            line-height: 16px;
-            padding-left: 18px; }
-            .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item label::before {
-              top: 1px;
-              width: 12px;
-              height: 12px;
-              background-color: transparent; }
-            .form-block .form-section .bottom-horizont-section .form-radio-wrapper .form-radio-item label::after {
-              width: 8px;
-              height: 8px;
-              top: 3px;
-              left: 2px;
-              background-color: white; }
-      .form-block .form-section .bottom-horizont-section .form-input-wide {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; }
-      .form-block .form-section .bottom-horizont-section .form-buttons-wrapper {
-        margin: 0;
-        padding: 0;
-        border: none; }
-      .form-block .form-section .bottom-horizont-section .form-button-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width: initial; }
-        .form-block .form-section .bottom-horizont-section .form-button-wrapper .button {
-          min-width: initial;
-          margin-left: 0;
-          font-family: "Avenir Medium", sans-serif;
-          font-weight: 500;
-          border: none; }
+.bg-img-settings {
+  position: relative; }
+  .bg-img-settings::after {
+    content: '';
+    position: absolute;
+    z-index: 15;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+
+.standard-p-block {
+  padding: 200px 0 220px; }
+
+/*custom style form on WEb site - service JOTFORM*/
