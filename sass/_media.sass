@@ -127,6 +127,15 @@
 			img
 				margin-left: -55px
 				max-width: 480px
+
+	.our-partners
+		.grid-section
+			margin-left: -16px
+			margin-right: -16px
+			.grid-item
+				padding: 0 16px
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
@@ -285,6 +294,15 @@
 						line-height: 22px
 						margin-left: 24px
 						max-width: 152px
+	.our-partners
+		.grid-section
+			margin-left: -14px
+			margin-right: -14px
+			.grid-item
+				padding: 0 14px
+				width: 33.33%
+				&:last-of-type
+					display: none
 
 
 	///*Disable Animation on Mobile Devices*/
@@ -463,8 +481,14 @@
 				width: 110px
 
 	.how-it-works
+		&.purple
+			&:after
+				background-image: url('../img/how-it-works-bg-snippet-xs.png')
+				background-position: center right
+				top: 0
+				bottom: initial
 		.tiles-wrapper
-			margin-top: 100px
+			margin-top: 120px
 			.tile
 				.tile-body
 					img
@@ -472,6 +496,22 @@
 						min-height: 105px
 						height: 105px
 
+	.our-partners
+		.middle-main-title
+			text-align: left
+			width: 100%
+
+	.our-partners
+		.grid-section
+			margin-left: -10px
+			margin-right: -10px
+			.grid-item
+				padding: 0 10px
+				width: 33.33%
+				&:last-of-type
+					display: none
+				.grid-body
+					min-height: 104px
 
 	/**/
 

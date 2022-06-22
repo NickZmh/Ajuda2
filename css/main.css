@@ -368,8 +368,6 @@ header {
     color: #1585ff;
     margin-bottom: 38px; }
   .our-partners .grid-section {
-    width: 100%;
-    max-width: 760px;
     margin-left: -20px;
     margin-right: -20px;
     display: flex;
@@ -509,7 +507,12 @@ footer {
     z-index: 50; }
   .benefits .img-block img {
     margin-left: -55px;
-    max-width: 480px; } }
+    max-width: 480px; }
+  .our-partners .grid-section {
+    margin-left: -16px;
+    margin-right: -16px; }
+    .our-partners .grid-section .grid-item {
+      padding: 0 16px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -653,7 +656,15 @@ footer {
           font-size: 18px;
           line-height: 22px;
           margin-left: 24px;
-          max-width: 152px; } }
+          max-width: 152px; }
+  .our-partners .grid-section {
+    margin-left: -14px;
+    margin-right: -14px; }
+    .our-partners .grid-section .grid-item {
+      padding: 0 14px;
+      width: 33.33%; }
+      .our-partners .grid-section .grid-item:last-of-type {
+        display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -778,12 +789,30 @@ footer {
   .benefits .form-block .img-snippet {
     top: -156px;
     width: 110px; }
+  .how-it-works.purple:after {
+    background-image: url("../img/how-it-works-bg-snippet-xs.png");
+    background-position: center right;
+    top: 0;
+    bottom: initial; }
   .how-it-works .tiles-wrapper {
-    margin-top: 100px; }
+    margin-top: 120px; }
     .how-it-works .tiles-wrapper .tile .tile-body img {
       top: 7px;
       min-height: 105px;
       height: 105px; }
+  .our-partners .middle-main-title {
+    text-align: left;
+    width: 100%; }
+  .our-partners .grid-section {
+    margin-left: -10px;
+    margin-right: -10px; }
+    .our-partners .grid-section .grid-item {
+      padding: 0 10px;
+      width: 33.33%; }
+      .our-partners .grid-section .grid-item:last-of-type {
+        display: none; }
+      .our-partners .grid-section .grid-item .grid-body {
+        min-height: 104px; }
   /**/ }
 
 /* Custom, iPhone Retina */
