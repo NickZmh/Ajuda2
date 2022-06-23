@@ -246,6 +246,27 @@ header
 			height: 100%
 			bottom: 0
 			background-position: center bottom
+	&.yellow
+		background-color: #FFF5CC
+		&::after
+			background-image: url("../img/how-it-works-bg-yellow-snippet.png")
+			width: 100%
+			height: 100%
+			bottom: 0
+			background-position: center bottom
+		.middle-main-title
+			margin-bottom: 0
+		.tiles-wrapper
+			//margin-bottom: 160px
+			.tile
+				&:nth-child(2)
+					.tile-body
+						.smallest-title
+							max-width: 246px
+				.tile-body
+					.smallest-title
+						max-width: 260px
+
 	.content-wrapper
 		position: relative
 		z-index: 100
@@ -323,6 +344,8 @@ header
 			height: 100%
 			background-size: cover
 	.form-wrapper
+		.img-form-mobile
+			display: none
 		.form
 			.form-body
 				.form-title

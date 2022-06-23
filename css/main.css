@@ -411,6 +411,20 @@ header {
     height: 100%;
     bottom: 0;
     background-position: center bottom; }
+  .how-it-works.yellow {
+    background-color: #FFF5CC; }
+    .how-it-works.yellow::after {
+      background-image: url("../img/how-it-works-bg-yellow-snippet.png");
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      background-position: center bottom; }
+    .how-it-works.yellow .middle-main-title {
+      margin-bottom: 0; }
+    .how-it-works.yellow .tiles-wrapper .tile:nth-child(2) .tile-body .smallest-title {
+      max-width: 246px; }
+    .how-it-works.yellow .tiles-wrapper .tile .tile-body .smallest-title {
+      max-width: 260px; }
   .how-it-works .content-wrapper {
     position: relative;
     z-index: 100;
@@ -485,6 +499,8 @@ header {
     width: 100%;
     height: 100%;
     background-size: cover; }
+  .sign-up-form .form-wrapper .img-form-mobile {
+    display: none; }
   .sign-up-form .form-wrapper .form .form-body .form-title {
     color: #1585ff; }
   .sign-up-form .form-wrapper .form .text-block .smallest-title,
@@ -628,6 +644,8 @@ footer {
       max-width: 50%; }
     .vendors .button-wrapper {
       margin-top: 36px; }
+  .how-it-works.yellow .tiles-wrapper .tile .tile-body {
+    padding: 0 20px 35px; }
   .benefits .content-block {
     min-width: 440px;
     padding: 140px 0 140px; }
@@ -883,6 +901,8 @@ footer {
     display: none; }
   .benefits .form-block .img-snippet {
     display: flex; }
+  .how-it-works.yellow .tiles-wrapper .tile .tile-body {
+    padding: 20px 30px; }
   .how-it-works .tiles-wrapper {
     margin-top: 150px;
     flex-direction: column; }
@@ -893,10 +913,11 @@ footer {
         .how-it-works .tiles-wrapper .tile:nth-child(2) .tile-body .smallest-title {
           margin-right: 24px;
           margin-left: 0;
-          text-align: right; }
+          text-align: left; }
       .how-it-works .tiles-wrapper .tile .tile-body {
         position: relative;
         flex-direction: row;
+        justify-content: space-between;
         padding: 20px 30px; }
         .how-it-works .tiles-wrapper .tile .tile-body img {
           position: relative;
@@ -1002,6 +1023,12 @@ footer {
     padding: 24px 20px; }
     .benefits .form-block iframe {
       width: 100%; }
+  .how-it-works.yellow .content-wrapper {
+    align-items: center; }
+  .how-it-works.yellow .tiles-wrapper {
+    margin-top: 100px; }
+    .how-it-works.yellow .tiles-wrapper .tile .tile-body {
+      padding: 20px 30px; }
   .how-it-works .content-wrapper {
     align-items: flex-start; }
     .how-it-works .content-wrapper .description {
@@ -1127,8 +1154,18 @@ footer {
     background-position: center right;
     top: 0;
     bottom: initial; }
+  .how-it-works.yellow:after {
+    background-image: url("../img/how-it-works-bg-yellow-snippet-xs.png");
+    background-position: bottom right;
+    background-position-y: 160px;
+    top: 0;
+    bottom: initial; }
+  .how-it-works.yellow .tiles-wrapper .tile .tile-body .smallest-title {
+    max-width: 156px !important; }
+  .how-it-works.yellow .tiles-wrapper .tile .tile-body img {
+    top: 17px; }
   .how-it-works .tiles-wrapper {
-    margin-top: 120px; }
+    margin-top: 80px; }
     .how-it-works .tiles-wrapper .tile .tile-body img {
       top: 7px;
       min-height: 105px;
@@ -1152,6 +1189,8 @@ footer {
       background-color: #1585ff; }
     .sign-up-form .wrapper-block {
       padding: 0; }
+    .sign-up-form .form-wrapper .img-form-mobile {
+      display: block; }
     .sign-up-form .form-wrapper .form {
       padding: 30px 0 0px;
       border-radius: 0;

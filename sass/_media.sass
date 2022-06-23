@@ -73,6 +73,18 @@
 		.button-wrapper
 			margin-top: 36px
 
+	.how-it-works
+		&.yellow
+			.tiles-wrapper
+				.tile
+					&:nth-child(2)
+						.tile-body
+							.smallest-title
+					//max-width: 246px
+					.tile-body
+						padding: 0 20px 35px
+
+
 	.benefits
 		.content-block
 			min-width: 440px
@@ -173,6 +185,7 @@
 					max-width: 430px
 
 	.how-it-works
+
 		.tiles-wrapper
 			margin-top: 170px
 			margin-left: -8px
@@ -401,6 +414,9 @@
 				display: flex
 
 	.how-it-works
+		&.yellow
+			.tiles-wrapper .tile .tile-body
+				padding: 20px 30px
 		.tiles-wrapper
 			margin-top: 150px
 			flex-direction: column
@@ -412,10 +428,11 @@
 						.smallest-title
 							margin-right: 24px
 							margin-left: 0
-							text-align: right
+							text-align: left
 				.tile-body
 					position: relative
 					flex-direction: row
+					justify-content: space-between
 					padding: 20px 30px
 					img
 						position: relative
@@ -564,8 +581,14 @@
 			padding: 24px 20px
 			iframe
 				width: 100%
-
 	.how-it-works
+		&.yellow
+			.content-wrapper
+				align-items: center
+			.tiles-wrapper
+				margin-top: 100px
+				.tile .tile-body
+					padding: 20px 30px
 		.content-wrapper
 			align-items: flex-start
 			.description
@@ -725,8 +748,21 @@
 				background-position: center right
 				top: 0
 				bottom: initial
+		&.yellow
+			&:after
+				background-image: url('../img/how-it-works-bg-yellow-snippet-xs.png')
+				background-position: bottom right
+				background-position-y: 160px
+				top: 0
+				bottom: initial
+			.tiles-wrapper
+				.tile .tile-body
+					.smallest-title
+						max-width: 156px!important
+					img
+						top: 17px
 		.tiles-wrapper
-			margin-top: 120px
+			margin-top: 80px
 			.tile
 				.tile-body
 					img
@@ -763,6 +799,8 @@
 		.wrapper-block
 			padding: 0
 		.form-wrapper
+			.img-form-mobile
+				display: block
 			.form
 				padding: 30px 0 0px
 				border-radius: 0
