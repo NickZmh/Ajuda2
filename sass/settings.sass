@@ -58,7 +58,7 @@ img
     font-weight: 500
     font-size: 16px
     line-height: 20px
-    letter-spacing: .2em
+    letter-spacing: .02em
     padding: 14px 20px
     color: white
     &.small
@@ -77,6 +77,17 @@ img
                 border: 1px solid $blue-color
                 background-color: transparent
                 color: $blue-color
+    &.full-pink
+        background-color: $pink-color
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1)
+        border: 1px solid transparent
+        &.hover-change
+            transition: all .5s ease-in-out
+            &:hover
+                transition: all .5s ease-in-out
+                border: 1px solid $pink-color
+                background-color: transparent
+                color: $pink-color
     &.transparent-blue
         filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1))
         background-color: transparent
@@ -124,9 +135,62 @@ img
     padding: 200px 0 220px
 
 
-//inserted forms
+.features
+    position: relative
+    z-index: 150
+    display: flex
+    flex-direction: row
+    margin-right: -12px
+    margin-left: -12px
+    .features-item
+        padding: 0 12px
+        flex-grow: 1
+        //width: 100%
+        //max-width: 20%
+        .features-item-body
+            padding: 16px 30px
+            border-radius: 10px
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            align-content: center
+            .text
+                font-size: 24px
+                line-height: 28px
+                font-family: 'Avenir Heavy', sans-serif
+                font-weight: 900
+                margin-left: 12px
+            .icon
+                width: 20px
+                img
+                    display: block
+            &.violet
+                background-color: #D8CDF8
+                .text
+                    color: $blue-primary
+            &.light-blue
+                background-color: #CFE6FF
+                .text
+                    color: $blue-medium
+            &.light-green
+                min-width: 280px
+                background-color: #ECFDF5
+                .text
+                    color: $green-color
+            &.light-pink
+                background-color: #FFE6F5
+                .text
+                    color: $pink-color
+            &.light-yellow
+                background-color: #FFFAE6
+                .text
+                    color: $yellow-color
 
 
+
+
+//DONT DELETE THIS BLOCK
 
 /*custom style form on WEb site - service JOTFORM*/
 //

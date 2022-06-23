@@ -57,7 +57,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: .2em;
+  letter-spacing: .02em;
   padding: 14px 20px;
   color: white; }
   .button.small {
@@ -76,6 +76,17 @@ img {
         border: 1px solid #1585ff;
         background-color: transparent;
         color: #1585ff; }
+  .button.full-pink {
+    background-color: #ff009e;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent; }
+    .button.full-pink.hover-change {
+      transition: all .5s ease-in-out; }
+      .button.full-pink.hover-change:hover {
+        transition: all .5s ease-in-out;
+        border: 1px solid #ff009e;
+        background-color: transparent;
+        color: #ff009e; }
   .button.transparent-blue {
     filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
     background-color: transparent;
@@ -119,5 +130,55 @@ img {
 
 .standard-p-block {
   padding: 200px 0 220px; }
+
+.features {
+  position: relative;
+  z-index: 150;
+  display: flex;
+  flex-direction: row;
+  margin-right: -12px;
+  margin-left: -12px; }
+  .features .features-item {
+    padding: 0 12px;
+    flex-grow: 1; }
+    .features .features-item .features-item-body {
+      padding: 16px 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      .features .features-item .features-item-body .text {
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'Avenir Heavy', sans-serif;
+        font-weight: 900;
+        margin-left: 12px; }
+      .features .features-item .features-item-body .icon {
+        width: 20px; }
+        .features .features-item .features-item-body .icon img {
+          display: block; }
+      .features .features-item .features-item-body.violet {
+        background-color: #D8CDF8; }
+        .features .features-item .features-item-body.violet .text {
+          color: #3E06DE; }
+      .features .features-item .features-item-body.light-blue {
+        background-color: #CFE6FF; }
+        .features .features-item .features-item-body.light-blue .text {
+          color: #1585ff; }
+      .features .features-item .features-item-body.light-green {
+        min-width: 280px;
+        background-color: #ECFDF5; }
+        .features .features-item .features-item-body.light-green .text {
+          color: #10b981; }
+      .features .features-item .features-item-body.light-pink {
+        background-color: #FFE6F5; }
+        .features .features-item .features-item-body.light-pink .text {
+          color: #ff009e; }
+      .features .features-item .features-item-body.light-yellow {
+        background-color: #FFFAE6; }
+        .features .features-item .features-item-body.light-yellow .text {
+          color: #efc200; }
 
 /*custom style form on WEb site - service JOTFORM*/

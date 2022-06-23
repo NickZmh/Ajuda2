@@ -1,13 +1,18 @@
-//@import "bourbon"
 
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width : 1400px)
+
+	/**/
+	//common styles page
 	.main
 		&.home
 			&::after
 				width: 100%
 
 @media only screen and (max-width : 1300px)
+
+	/**/
+	//common styles page
 	.main
 		&.home
 			&::after
@@ -16,16 +21,12 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-	//.main
-		//.main-title
-			//font-size: px
-	//.main
-		//padding: 200px 0 100px
-
+	//settings block for page
 	.standard-p-block
 		padding: 160px 0 160px
 
-
+	/**/
+	//common styles page
 	.main
 		.media-section
 			&.video
@@ -45,8 +46,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
 
+	/**/
+	//settings block for page
 	.standard-p-block
 		padding: 140px 0 120px
 
@@ -62,6 +64,8 @@
 		&.small
 			padding: 12px 16px
 
+	/**/
+	//common styles page
 	.nav-menu
 		li
 			padding: 0 16px
@@ -78,8 +82,6 @@
 		.description
 			font-size: 26px
 			line-height: 30px
-		//.wrapper-content
-		//	align-items: flex-start
 		.media-section
 			&.video
 				min-height: 280px
@@ -139,15 +141,19 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
-	.nav-menu
-		display: none
-
+	//settings block for page
 	.smallest-title
 		font-size: 18px
 		line-height: 22px
 
 	.standard-p-block
 		padding: 120px 0 100px
+
+	//common styles page
+	header
+		.nav-menu
+			display: none
+
 
 	.top_mnu
 		position: fixed
@@ -221,7 +227,6 @@
 						height: 100%
 						-webkit-transition: all 0.5s ease-in-out
 						transition: all 0.5s ease-in-out
-
 
 
 	.main
@@ -399,6 +404,31 @@
 						line-height: 22px
 						margin-left: 20px
 						max-width: 142px
+
+	footer
+		padding: 26px 0 30px
+		.logo
+			display: none
+		.wrapper-line
+			flex-direction: column
+			align-items: center
+		.nav-menu
+			li
+				text-align: center
+		.right-side
+			flex-direction: column-reverse
+			.button
+				margin-top: 24px
+				margin-bottom: 0
+			.simple-text
+				margin-top: 10px
+				margin-bottom: 0
+				&:first-of-type
+					order: 1
+			.button
+				padding: 12px 18px
+				font-size: 14px
+				line-height: 18px
 
 @media only screen and (max-width : 480px)
 

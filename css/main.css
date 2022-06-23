@@ -81,7 +81,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: .2em;
+  letter-spacing: .02em;
   padding: 14px 20px;
   color: white; }
   .button.small {
@@ -100,6 +100,17 @@ img {
         border: 1px solid #1585ff;
         background-color: transparent;
         color: #1585ff; }
+  .button.full-pink {
+    background-color: #ff009e;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent; }
+    .button.full-pink.hover-change {
+      transition: all .5s ease-in-out; }
+      .button.full-pink.hover-change:hover {
+        transition: all .5s ease-in-out;
+        border: 1px solid #ff009e;
+        background-color: transparent;
+        color: #ff009e; }
   .button.transparent-blue {
     filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
     background-color: transparent;
@@ -144,6 +155,56 @@ img {
 .standard-p-block {
   padding: 200px 0 220px; }
 
+.features {
+  position: relative;
+  z-index: 150;
+  display: flex;
+  flex-direction: row;
+  margin-right: -12px;
+  margin-left: -12px; }
+  .features .features-item {
+    padding: 0 12px;
+    flex-grow: 1; }
+    .features .features-item .features-item-body {
+      padding: 16px 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      .features .features-item .features-item-body .text {
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'Avenir Heavy', sans-serif;
+        font-weight: 900;
+        margin-left: 12px; }
+      .features .features-item .features-item-body .icon {
+        width: 20px; }
+        .features .features-item .features-item-body .icon img {
+          display: block; }
+      .features .features-item .features-item-body.violet {
+        background-color: #D8CDF8; }
+        .features .features-item .features-item-body.violet .text {
+          color: #3E06DE; }
+      .features .features-item .features-item-body.light-blue {
+        background-color: #CFE6FF; }
+        .features .features-item .features-item-body.light-blue .text {
+          color: #1585ff; }
+      .features .features-item .features-item-body.light-green {
+        min-width: 280px;
+        background-color: #ECFDF5; }
+        .features .features-item .features-item-body.light-green .text {
+          color: #10b981; }
+      .features .features-item .features-item-body.light-pink {
+        background-color: #FFE6F5; }
+        .features .features-item .features-item-body.light-pink .text {
+          color: #ff009e; }
+      .features .features-item .features-item-body.light-yellow {
+        background-color: #FFFAE6; }
+        .features .features-item .features-item-body.light-yellow .text {
+          color: #efc200; }
+
 /*custom style form on WEb site - service JOTFORM*/
 .nav-menu {
   display: flex;
@@ -166,7 +227,7 @@ header {
   padding: 36px 0;
   background-color: transparent;
   position: absolute;
-  z-index: 10; }
+  z-index: 1000; }
   header .logo {
     display: inline-block;
     max-width: 157px; }
@@ -202,15 +263,38 @@ header {
     .main.home .main-title,
     .main.home .description {
       color: #ff009e; }
+    .main.home .description {
+      font-family: 'AvantGarde Medium', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 34px; }
     .main.home .text-section {
       max-width: 380px; }
+  .main.vendors {
+    background-color: #ECE6FC;
+    padding-bottom: 140px; }
+    .main.vendors::after {
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background-image: url("../img/vendors-bg-banner.png");
+      background-position: center right; }
+    .main.vendors .middle-main-title {
+      color: #3E06DE;
+      max-width: 420px;
+      margin-bottom: 28px; }
+    .main.vendors .wrapper-content {
+      z-index: 20;
+      margin-bottom: 40px; }
+    .main.vendors .media-section.image img {
+      max-width: 650px; }
+    .main.vendors .smallest-title {
+      color: #3E06DE;
+      margin-bottom: 20px; }
   .main .main-title {
     margin-bottom: 20px; }
-  .main .description {
-    font-family: 'AvantGarde Medium', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 34px; }
   .main .text-section {
     max-width: 440px; }
   .main .buttons-wrapper {
@@ -225,6 +309,8 @@ header {
     width: 100%;
     max-width: 700px;
     min-height: 390px; }
+  .main .media-section.image img {
+    max-width: 480px; }
   .main .tiles-wrapper {
     position: relative;
     z-index: 10;
@@ -421,10 +507,12 @@ footer {
 
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 1400px) {
+  /**/
   .main.home::after {
     width: 100%; } }
 
 @media only screen and (max-width: 1300px) {
+  /**/
   .main.home::after {
     background-position-x: -150px; } }
 
@@ -433,6 +521,7 @@ footer {
   /**/
   .standard-p-block {
     padding: 160px 0 160px; }
+  /**/
   .main .media-section.video {
     min-height: 350px; }
   .benefits .content-block {
@@ -456,6 +545,7 @@ footer {
     line-height: 28px; }
   .button.small {
     padding: 12px 16px; }
+  /**/
   .nav-menu li {
     padding: 0 16px; }
   .main.home .text-section {
@@ -516,13 +606,13 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .nav-menu {
-    display: none; }
   .smallest-title {
     font-size: 18px;
     line-height: 22px; }
   .standard-p-block {
     padding: 120px 0 100px; }
+  header .nav-menu {
+    display: none; }
   .top_mnu {
     position: fixed;
     top: 0;
@@ -725,7 +815,30 @@ footer {
         font-size: 16px;
         line-height: 22px;
         margin-left: 20px;
-        max-width: 142px; } }
+        max-width: 142px; }
+  footer {
+    padding: 26px 0 30px; }
+    footer .logo {
+      display: none; }
+    footer .wrapper-line {
+      flex-direction: column;
+      align-items: center; }
+    footer .nav-menu li {
+      text-align: center; }
+    footer .right-side {
+      flex-direction: column-reverse; }
+      footer .right-side .button {
+        margin-top: 24px;
+        margin-bottom: 0; }
+      footer .right-side .simple-text {
+        margin-top: 10px;
+        margin-bottom: 0; }
+        footer .right-side .simple-text:first-of-type {
+          order: 1; }
+      footer .right-side .button {
+        padding: 12px 18px;
+        font-size: 14px;
+        line-height: 18px; } }
 
 @media only screen and (max-width: 480px) {
   .middle-main-title {

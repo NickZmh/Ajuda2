@@ -3,7 +3,8 @@ $(document).ready(function() {
 
 // ADD CSS CLASS TO toggle_mnu
 
-	$(".top_mnu ul li a").click(function() {
+	$(".top_mnu ul li a").click(function(e) {
+
 		$(".top_mnu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
 		$(".top_text").css("opacity", "1");
@@ -14,7 +15,8 @@ $(document).ready(function() {
 		$(".sandwich").toggleClass("active");
 	});
 
-	$(".menu-button").click(function () {
+	$(".menu-button").click(function (e) {
+		e.preventDefault();
 		if ($(".top_mnu").is(":visible")) {
 			$(".top_mnu").fadeOut(600);
 			$(".top_mnu li a").removeClass("fadeInUp animated");
