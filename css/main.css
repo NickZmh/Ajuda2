@@ -157,7 +157,7 @@ img {
 
 .features {
   position: relative;
-  z-index: 150;
+  z-index: 20;
   display: flex;
   flex-direction: row;
   margin-right: -12px;
@@ -215,12 +215,13 @@ img {
       padding-right: 0; }
     .nav-menu li a {
       display: inline-flex;
-      font-family: 'Avenir Heavy', sans-serif;
-      font-weight: 900;
+      font-family: 'AvantGarde Bold', sans-serif;
+      font-weight: 700;
       font-size: 12px;
       line-height: 18px;
       text-transform: uppercase;
-      letter-spacing: 0.12em; }
+      letter-spacing: 0.12em;
+      color: #3E06DE; }
 
 header {
   width: 100%;
@@ -237,8 +238,8 @@ header {
     align-items: flex-start; }
   header .menu-button {
     display: inline-flex;
-    font-family: 'Avenir Heavy', sans-serif;
-    font-weight: 900;
+    font-family: 'AvantGarde Bold', sans-serif;
+    font-weight: 700;
     font-size: 14px;
     line-height: 18px;
     color: #3E06DE; }
@@ -268,31 +269,13 @@ header {
       font-weight: 500;
       font-size: 30px;
       line-height: 34px; }
-    .main.home .text-section {
-      max-width: 380px; }
-  .main.vendors {
-    background-color: #ECE6FC;
-    padding-bottom: 140px; }
-    .main.vendors::after {
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      background-image: url("../img/vendors-bg-banner.png");
-      background-position: center right; }
-    .main.vendors .middle-main-title {
-      color: #3E06DE;
-      max-width: 420px;
-      margin-bottom: 28px; }
-    .main.vendors .wrapper-content {
-      z-index: 20;
-      margin-bottom: 40px; }
-    .main.vendors .media-section.image img {
-      max-width: 650px; }
-    .main.vendors .smallest-title {
-      color: #3E06DE;
-      margin-bottom: 20px; }
+  .main .text-section {
+    max-width: 380px; }
+  .main .smallest-title {
+    position: relative;
+    z-index: 20;
+    color: #3E06DE;
+    margin-bottom: 20px; }
   .main .main-title {
     margin-bottom: 20px; }
   .main .text-section {
@@ -346,6 +329,27 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+
+.vendors {
+  background-color: #ECE6FC;
+  padding-bottom: 140px; }
+  .vendors::after {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url("../img/vendors-bg-banner.png");
+    background-position: top right; }
+  .vendors .middle-main-title {
+    color: #3E06DE;
+    max-width: 420px;
+    margin-bottom: 28px; }
+  .vendors .wrapper-content {
+    z-index: 20;
+    margin-bottom: 40px; }
+  .vendors .media-section.image img {
+    max-width: 650px; }
 
 .top_mnu {
   display: none; }
@@ -521,9 +525,37 @@ footer {
   /**/
   .standard-p-block {
     padding: 160px 0 160px; }
+  .features {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .features .features-item {
+      width: 100%;
+      max-width: 33.33%;
+      margin-bottom: 24px; }
+      .features .features-item .features-item-body .text {
+        font-size: 22px;
+        line-height: 26px; }
+  .description {
+    font-size: 19px; }
   /**/
   .main .media-section.video {
     min-height: 350px; }
+  .vendors {
+    padding-bottom: 100px; }
+    .vendors .wrapper-content {
+      margin-bottom: 60px; }
+    .vendors .media-section.image img {
+      max-width: 480px; }
+    .vendors .text-section {
+      max-width: 50%;
+      padding-right: 30px; }
+    .vendors .media-section {
+      max-width: 50%; }
+    .vendors .button-wrapper {
+      margin-top: 36px; }
   .benefits .content-block {
     min-width: 440px;
     padding: 140px 0 140px; }
@@ -545,6 +577,14 @@ footer {
     line-height: 28px; }
   .button.small {
     padding: 12px 16px; }
+  .features .features-item {
+    max-width: 38%;
+    margin-bottom: 24px; }
+    .features .features-item .features-item-body.light-green {
+      min-width: initial; }
+    .features .features-item .features-item-body .text {
+      font-size: 22px;
+      line-height: 26px; }
   /**/
   .nav-menu li {
     padding: 0 16px; }
@@ -553,12 +593,12 @@ footer {
     padding-right: 20px; }
   .main.home::after {
     background-position-x: -340px; }
+  .main.home .description {
+    font-size: 26px;
+    line-height: 30px; }
   .main .main-title {
     font-size: 52px;
     line-height: 56px; }
-  .main .description {
-    font-size: 26px;
-    line-height: 30px; }
   .main .media-section.video {
     min-height: 280px;
     height: 280px; }
@@ -577,6 +617,15 @@ footer {
       margin-left: 0; }
   .main .tiles-wrapper .tile-wrapper {
     max-width: 270px; }
+  .vendors .text-section {
+    padding-right: 2vw; }
+  .vendors .middle-main-title {
+    max-width: 380px;
+    margin-bottom: 26px; }
+  .vendors .smallest-title {
+    text-align: center; }
+  .vendors .media-section.image img {
+    max-width: 430px; }
   .how-it-works .tiles-wrapper {
     margin-top: 170px;
     margin-left: -8px;
@@ -604,6 +653,18 @@ footer {
     .our-partners .grid-section .grid-item {
       padding: 0 16px; } }
 
+@media only screen and (max-width: 900px) {
+  .vendors .wrapper-content {
+    flex-direction: column; }
+  .vendors .text-section {
+    max-width: 650px; }
+  .vendors .buttons-wrapper {
+    margin-bottom: 56px; }
+  .vendors .media-section {
+    max-width: 100%; }
+    .vendors .media-section.image img {
+      max-width: 100%; } }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .smallest-title {
@@ -611,6 +672,25 @@ footer {
     line-height: 22px; }
   .standard-p-block {
     padding: 120px 0 100px; }
+  .features .features-item {
+    max-width: 42%;
+    margin-bottom: 24px; }
+    .features .features-item:nth-child(3) {
+      max-width: 320px;
+      order: 3; }
+    .features .features-item:nth-child(2) {
+      order: 5; }
+    .features .features-item:nth-child(4) {
+      order: 1; }
+    .features .features-item:nth-child(1) {
+      order: 2; }
+    .features .features-item:nth-child(5) {
+      order: 4; }
+    .features .features-item .features-item-body {
+      padding: 14px 24px; }
+      .features .features-item .features-item-body .text {
+        font-size: 20px;
+        line-height: 24px; }
   header .nav-menu {
     display: none; }
   .top_mnu {
@@ -623,7 +703,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: 100;
+    z-index: 2000;
     width: 100%;
     height: 100%; }
     .top_mnu ul {
@@ -696,6 +776,8 @@ footer {
     .main.home .description {
       font-size: 24px;
       line-height: 28px; }
+    .main .smallest-title {
+      font-size: 12px; }
     .main .tiles-wrapper {
       margin-top: 60px; }
       .main .tiles-wrapper .tile {
@@ -754,7 +836,17 @@ footer {
       padding: 0 14px;
       width: 33.33%; }
       .our-partners .grid-section .grid-item:last-of-type {
-        display: none; } }
+        display: none; }
+  .main.vendors .wrapper-content {
+    flex-direction: column; }
+  .main.vendors .text-section {
+    max-width: 710px; }
+  .main.vendors .buttons-wrapper {
+    margin-bottom: 56px; }
+  .main.vendors .media-section {
+    max-width: 100%; }
+    .main.vendors .media-section.image img {
+      max-width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -766,6 +858,25 @@ footer {
     line-height: 26px; }
   .standard-p-block {
     padding: 100px 0 80px; }
+  .features {
+    margin-right: -8px;
+    margin-left: -8px; }
+    .features .features-item {
+      max-width: 42%;
+      padding: 0 8px;
+      margin-bottom: 16px; }
+      .features .features-item:nth-child(3) {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .features .features-item:nth-child(3) .features-item-body {
+          max-width: 220px; }
+      .features .features-item .features-item-body {
+        padding: 12px 20px; }
+        .features .features-item .features-item-body .text {
+          font-size: 18px;
+          line-height: 22px; }
   header {
     padding: 12px 0; }
     header .logo {
@@ -776,10 +887,17 @@ footer {
     padding: 160px 0 90px; }
     .main.home::after {
       background-position-x: -720px; }
-    .main .tiles-wrapper .tile {
+    .main.home .tiles-wrapper .tile {
       padding: 24px; }
-      .main .tiles-wrapper .tile .tile-title {
+      .main.home .tiles-wrapper .tile .tile-title {
         max-width: 148px; }
+    .main.vendors::after {
+      background-image: url("../img/vendors-bg-banner-xs.png");
+      background-position: bottom right; }
+    .main.vendors .middle-main-title {
+      max-width: 320px; }
+    .main.common .buttons-wrapper {
+      margin-bottom: 40px; }
     .main .main-title {
       margin-bottom: 16px; }
     .main .media-section.video {
@@ -853,6 +971,15 @@ footer {
     padding: 8px 16px; }
   .standard-p-block {
     padding: 80px 0 60px; }
+  .features .features-item {
+    max-width: 48%; }
+    .features .features-item:nth-child(3) .features-item-body {
+      max-width: 220px; }
+    .features .features-item .features-item-body {
+      padding: 12px 18px; }
+      .features .features-item .features-item-body .text {
+        font-size: 16px;
+        line-height: 20px; }
   .top_mnu ul {
     justify-content: flex-end; }
     .top_mnu ul li a.menu-button {
@@ -869,6 +996,9 @@ footer {
       font-size: 20px;
       line-height: 24px;
       max-width: 280px; }
+    .main.vendors .middle-main-title {
+      max-width: 276px;
+      margin-bottom: 20px; }
     .main .main-title {
       font-size: 46px;
       line-height: 50px; }
@@ -882,18 +1012,18 @@ footer {
         margin-right: 0; }
         .main .buttons-wrapper .button:first-of-type {
           margin-bottom: 12px; }
-  .main .tiles-wrapper {
-    margin-left: -6px;
-    margin-right: -6px; }
-    .main .tiles-wrapper .tile-wrapper {
-      padding: 0 6px; }
-    .main .tiles-wrapper .tile {
-      padding: 20px; }
-      .main .tiles-wrapper .tile .tile-title {
-        max-width: 120px;
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 12px; }
+    .main .tiles-wrapper {
+      margin-left: -6px;
+      margin-right: -6px; }
+      .main .tiles-wrapper .tile-wrapper {
+        padding: 0 6px; }
+      .main .tiles-wrapper .tile {
+        padding: 20px; }
+        .main .tiles-wrapper .tile .tile-title {
+          max-width: 120px;
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 12px; }
   .benefits .content-block {
     padding: 60px 0 80px; }
     .benefits .content-block .middle-main-title {
