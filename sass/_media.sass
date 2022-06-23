@@ -1,3 +1,5 @@
+@import "colors"
+
 
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width : 1400px)
@@ -48,8 +50,13 @@
 	.main
 		.media-section
 			&.video
-				min-height: 350px
-
+				max-width: 560px
+				min-height: initial
+				height: 314px
+		.text-section
+			max-width: 370px
+		.wrapper-content
+			align-items: flex-start
 	.vendors
 		padding-bottom: 100px
 		.wrapper-content
@@ -109,7 +116,7 @@
 					font-size: 22px
 					line-height: 26px
 
-	/**/
+
 	//common styles page
 	.nav-menu
 		li
@@ -130,8 +137,8 @@
 
 		.media-section
 			&.video
-				min-height: 280px
-				height: 280px
+				//min-height: 280px
+				height: 231px
 		.buttons-wrapper
 			margin-top: 40px
 		.tiles-wrapper
@@ -199,6 +206,24 @@
 			.grid-item
 				padding: 0 16px
 
+	.sign-up-form
+		.form-wrapper
+			.form
+				max-width: 474px
+				padding: 48px 0 30px
+				.text-block
+					padding: 0 38px
+					.list-benefits
+						li
+							.icon
+								width: 22px
+							.text
+								font-size: 17px
+								line-height: 27px
+				.form-body
+					padding: 0 38px
+
+
 @media only screen and (max-width : 900px)
 
 	.vendors
@@ -219,9 +244,9 @@
 @media only screen and (max-width : 768px)
 
 	//settings block for page
-	.smallest-title
-		font-size: 18px
-		line-height: 22px
+	//.smallest-title
+	//	font-size: 18px
+	//	line-height: 22px
 
 	.standard-p-block
 		padding: 120px 0 100px
@@ -357,6 +382,10 @@
 			margin-bottom: 56px
 			.button
 				margin-right: 16px
+		.media-section
+			&.video
+				//min-height: 280px
+				height: 280px
 
 	.benefits
 		.content-block
@@ -423,7 +452,17 @@
 				img
 					max-width: 100%
 
-
+	.sign-up-form
+		.form-wrapper
+			.form
+				max-width: 100%
+				.text-block
+					//.smallest-title
+					//	font-size: 12px
+					.middle-main-title
+						font-size: 38px
+						line-height: 44px
+						max-width: 340px
 	///*Disable Animation on Mobile Devices*/
 	//.animated
 	//	/*CSS transitions*/
@@ -549,6 +588,14 @@
 						margin-left: 20px
 						max-width: 142px
 
+	.sign-up-form
+		.form-wrapper
+			.form
+				.text-block
+					.middle-main-title
+						font-size: 34px
+						line-height: 40px
+
 	footer
 		padding: 26px 0 30px
 		.logo
@@ -628,6 +675,18 @@
 				font-size: 20px
 				line-height: 24px
 				max-width: 280px
+			.tiles-wrapper
+				margin-left: -6px
+				margin-right: -6px
+				.tile-wrapper
+					padding: 0 6px
+				.tile
+					padding: 20px
+					.tile-title
+						max-width: 120px
+						font-size: 16px
+						line-height: 20px
+						margin-bottom: 12px
 		&.vendors
 			.middle-main-title
 				max-width: 276px
@@ -646,18 +705,7 @@
 				margin-right: 0
 				&:first-of-type
 					margin-bottom: 12px
-		.tiles-wrapper
-			margin-left: -6px
-			margin-right: -6px
-			.tile-wrapper
-				padding: 0 6px
-			.tile
-				padding: 20px
-				.tile-title
-					max-width: 120px
-					font-size: 16px
-					line-height: 20px
-					margin-bottom: 12px
+
 
 	.benefits
 		.content-block
@@ -702,6 +750,46 @@
 					display: none
 				.grid-body
 					min-height: 104px
+
+	//vendor page
+
+	.sign-up-form
+		padding: 0
+		&.vendor
+			.form-wrapper
+				.form
+					.form-body-wrapper
+						background-color: $blue-medium
+		.wrapper-block
+			padding: 0
+		.form-wrapper
+			.form
+				padding: 30px 0 0px
+				border-radius: 0
+				display: flex
+				flex-direction: column
+				.text-block
+					padding: 0 20px
+					margin-bottom: 36px
+					.list-benefits li .text
+						font-size: 16px
+					.middle-main-title
+						font-size: 30px
+						line-height: 34px
+						max-width: 240px
+				.form-body-wrapper
+					padding: 28px 20px 32px
+				.form-body
+					display: flex
+					flex-direction: column
+					background-color: #fff
+					box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05)
+					border-radius: 8px
+					padding: 24px 20px 18px
+					.form-title
+						margin-top: 0
+
+					//.middle-main-title
 
 	/**/
 

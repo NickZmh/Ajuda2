@@ -35,11 +35,12 @@ img {
   text-transform: uppercase; }
 
 .smallest-title {
-  font-family: 'Avenir Heavy', sans-serif;
-  font-weight: 900;
+  font-family: 'Avenir Bold', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: .010em; }
 
 .description {
   font-family: 'Avenir Regular', sans-serif;

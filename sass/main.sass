@@ -120,8 +120,8 @@ header
 	.media-section
 		&.video
 			width: 100%
-			max-width: 700px
-			min-height: 390px
+			max-width: 650px
+			min-height: 365px
 		&.image
 			img
 				max-width: 480px
@@ -141,6 +141,7 @@ header
 		.tile
 			display: flex
 			flex-direction: row
+			justify-content: space-between
 			align-items: center
 			background-color: white
 			padding: 32px 38px
@@ -149,8 +150,10 @@ header
 			.tile-title
 				font-family: 'Avenir Medium', sans-serif
 				font-weight: 800
-				color: $blue-medium
+				color: $pink-color
 				letter-spacing: 0.02em
+				text-transform: initial
+				max-width: 190px
 			.button
 				margin-left: 30px
 				img
@@ -308,6 +311,79 @@ header
 			.grid-body
 				background-color: #E2E8F0
 				min-height: 120px
+
+.sign-up-form
+	padding: 70px 0 70px
+	&.vendor
+		&::after
+			background-image: url("../img/sign-up-vendor-bg.jpg")
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-size: cover
+	.form-wrapper
+		.form
+			.form-body
+				.form-title
+					color: $blue-medium
+			.text-block
+				.smallest-title,
+				.middle-main-title
+					color: $blue-medium
+				.list-benefits
+					li
+						.icon
+							width: 24px
+							svg
+								width: 100%
+								height: 100%
+							path
+								stroke: $blue-medium
+
+	.form-wrapper
+		position: relative
+		z-index: 150
+		.form
+			padding: 60px 0
+			max-width: 540px
+			background-color: #fff
+			box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05)
+			border-radius: 8px
+			.text-block
+				padding: 0 60px
+				.smallest-title
+					text-transform: uppercase
+				.middle-main-title
+					margin: 20px 0
+				.list-benefits
+					li
+						display: flex
+						flex-direction: row
+						align-items: center
+						margin-bottom: 8px
+						.icon
+							svg
+								display: block
+						.text
+							margin-left: 16px
+							font-family: 'Avenir Regular', sans-serif
+							font-weight: 400
+							font-size: 18px
+							line-height: 26px
+							color: #0C012C
+							letter-spacing: 0.01em
+			.form-body
+				padding: 0 60px
+				.form-title
+					font-family: 'AvantGarde Bold', sans-serif
+					font-weight: 700
+					font-size: 30px
+					line-height: 34px
+					letter-spacing: .02em
+					margin-top: 40px
+					margin-bottom: 16px
+
 
 footer
 	background-color: $blue-primary

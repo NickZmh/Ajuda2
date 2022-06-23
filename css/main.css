@@ -59,11 +59,12 @@ img {
   text-transform: uppercase; }
 
 .smallest-title {
-  font-family: 'Avenir Heavy', sans-serif;
-  font-weight: 900;
+  font-family: 'Avenir Bold', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: .010em; }
 
 .description {
   font-family: 'Avenir Regular', sans-serif;
@@ -290,8 +291,8 @@ header {
         margin-right: 0; }
   .main .media-section.video {
     width: 100%;
-    max-width: 700px;
-    min-height: 390px; }
+    max-width: 650px;
+    min-height: 365px; }
   .main .media-section.image img {
     max-width: 480px; }
   .main .tiles-wrapper {
@@ -310,6 +311,7 @@ header {
     .main .tiles-wrapper .tile {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       align-items: center;
       background-color: white;
       padding: 32px 38px;
@@ -318,8 +320,10 @@ header {
       .main .tiles-wrapper .tile .tile-title {
         font-family: 'Avenir Medium', sans-serif;
         font-weight: 800;
-        color: #1585ff;
-        letter-spacing: 0.02em; }
+        color: #ff009e;
+        letter-spacing: 0.02em;
+        text-transform: initial;
+        max-width: 190px; }
       .main .tiles-wrapper .tile .button {
         margin-left: 30px; }
         .main .tiles-wrapper .tile .button img {
@@ -472,6 +476,68 @@ header {
         background-color: #E2E8F0;
         min-height: 120px; }
 
+.sign-up-form {
+  padding: 70px 0 70px; }
+  .sign-up-form.vendor::after {
+    background-image: url("../img/sign-up-vendor-bg.jpg");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
+  .sign-up-form .form-wrapper .form .form-body .form-title {
+    color: #1585ff; }
+  .sign-up-form .form-wrapper .form .text-block .smallest-title,
+  .sign-up-form .form-wrapper .form .text-block .middle-main-title {
+    color: #1585ff; }
+  .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon {
+    width: 24px; }
+    .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon svg {
+      width: 100%;
+      height: 100%; }
+    .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon path {
+      stroke: #1585ff; }
+  .sign-up-form .form-wrapper {
+    position: relative;
+    z-index: 150; }
+    .sign-up-form .form-wrapper .form {
+      padding: 60px 0;
+      max-width: 540px;
+      background-color: #fff;
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+      border-radius: 8px; }
+      .sign-up-form .form-wrapper .form .text-block {
+        padding: 0 60px; }
+        .sign-up-form .form-wrapper .form .text-block .smallest-title {
+          text-transform: uppercase; }
+        .sign-up-form .form-wrapper .form .text-block .middle-main-title {
+          margin: 20px 0; }
+        .sign-up-form .form-wrapper .form .text-block .list-benefits li {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 8px; }
+          .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon svg {
+            display: block; }
+          .sign-up-form .form-wrapper .form .text-block .list-benefits li .text {
+            margin-left: 16px;
+            font-family: 'Avenir Regular', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #0C012C;
+            letter-spacing: 0.01em; }
+      .sign-up-form .form-wrapper .form .form-body {
+        padding: 0 60px; }
+        .sign-up-form .form-wrapper .form .form-body .form-title {
+          font-family: 'AvantGarde Bold', sans-serif;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 34px;
+          letter-spacing: .02em;
+          margin-top: 40px;
+          margin-bottom: 16px; }
+
 footer {
   background-color: #3E06DE;
   padding: 54px 0; }
@@ -542,7 +608,13 @@ footer {
     font-size: 19px; }
   /**/
   .main .media-section.video {
-    min-height: 350px; }
+    max-width: 560px;
+    min-height: initial;
+    height: 314px; }
+  .main .text-section {
+    max-width: 370px; }
+  .main .wrapper-content {
+    align-items: flex-start; }
   .vendors {
     padding-bottom: 100px; }
     .vendors .wrapper-content {
@@ -585,7 +657,6 @@ footer {
     .features .features-item .features-item-body .text {
       font-size: 22px;
       line-height: 26px; }
-  /**/
   .nav-menu li {
     padding: 0 16px; }
   .main.home .text-section {
@@ -600,8 +671,7 @@ footer {
     font-size: 52px;
     line-height: 56px; }
   .main .media-section.video {
-    min-height: 280px;
-    height: 280px; }
+    height: 231px; }
   .main .buttons-wrapper {
     margin-top: 40px; }
   .main .tiles-wrapper .tile {
@@ -651,7 +721,19 @@ footer {
     margin-left: -16px;
     margin-right: -16px; }
     .our-partners .grid-section .grid-item {
-      padding: 0 16px; } }
+      padding: 0 16px; }
+  .sign-up-form .form-wrapper .form {
+    max-width: 474px;
+    padding: 48px 0 30px; }
+    .sign-up-form .form-wrapper .form .text-block {
+      padding: 0 38px; }
+      .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon {
+        width: 22px; }
+      .sign-up-form .form-wrapper .form .text-block .list-benefits li .text {
+        font-size: 17px;
+        line-height: 27px; }
+    .sign-up-form .form-wrapper .form .form-body {
+      padding: 0 38px; } }
 
 @media only screen and (max-width: 900px) {
   .vendors .wrapper-content {
@@ -667,9 +749,6 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .smallest-title {
-    font-size: 18px;
-    line-height: 22px; }
   .standard-p-block {
     padding: 120px 0 100px; }
   .features .features-item {
@@ -792,6 +871,8 @@ footer {
       margin-bottom: 56px; }
       .main .buttons-wrapper .button {
         margin-right: 16px; }
+    .main .media-section.video {
+      height: 280px; }
   .benefits .content-block {
     padding: 100px 0 100px;
     min-width: initial;
@@ -846,7 +927,13 @@ footer {
   .main.vendors .media-section {
     max-width: 100%; }
     .main.vendors .media-section.image img {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .sign-up-form .form-wrapper .form {
+    max-width: 100%; }
+    .sign-up-form .form-wrapper .form .text-block .middle-main-title {
+      font-size: 38px;
+      line-height: 44px;
+      max-width: 340px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -934,6 +1021,9 @@ footer {
         line-height: 22px;
         margin-left: 20px;
         max-width: 142px; }
+  .sign-up-form .form-wrapper .form .text-block .middle-main-title {
+    font-size: 34px;
+    line-height: 40px; }
   footer {
     padding: 26px 0 30px; }
     footer .logo {
@@ -996,6 +1086,18 @@ footer {
       font-size: 20px;
       line-height: 24px;
       max-width: 280px; }
+    .main.home .tiles-wrapper {
+      margin-left: -6px;
+      margin-right: -6px; }
+      .main.home .tiles-wrapper .tile-wrapper {
+        padding: 0 6px; }
+      .main.home .tiles-wrapper .tile {
+        padding: 20px; }
+        .main.home .tiles-wrapper .tile .tile-title {
+          max-width: 120px;
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 12px; }
     .main.vendors .middle-main-title {
       max-width: 276px;
       margin-bottom: 20px; }
@@ -1011,18 +1113,6 @@ footer {
       .main .buttons-wrapper .button {
         margin-right: 0; }
         .main .buttons-wrapper .button:first-of-type {
-          margin-bottom: 12px; }
-    .main .tiles-wrapper {
-      margin-left: -6px;
-      margin-right: -6px; }
-      .main .tiles-wrapper .tile-wrapper {
-        padding: 0 6px; }
-      .main .tiles-wrapper .tile {
-        padding: 20px; }
-        .main .tiles-wrapper .tile .tile-title {
-          max-width: 120px;
-          font-size: 16px;
-          line-height: 20px;
           margin-bottom: 12px; }
   .benefits .content-block {
     padding: 60px 0 80px; }
@@ -1056,6 +1146,37 @@ footer {
         display: none; }
       .our-partners .grid-section .grid-item .grid-body {
         min-height: 104px; }
+  .sign-up-form {
+    padding: 0; }
+    .sign-up-form.vendor .form-wrapper .form .form-body-wrapper {
+      background-color: #1585ff; }
+    .sign-up-form .wrapper-block {
+      padding: 0; }
+    .sign-up-form .form-wrapper .form {
+      padding: 30px 0 0px;
+      border-radius: 0;
+      display: flex;
+      flex-direction: column; }
+      .sign-up-form .form-wrapper .form .text-block {
+        padding: 0 20px;
+        margin-bottom: 36px; }
+        .sign-up-form .form-wrapper .form .text-block .list-benefits li .text {
+          font-size: 16px; }
+        .sign-up-form .form-wrapper .form .text-block .middle-main-title {
+          font-size: 30px;
+          line-height: 34px;
+          max-width: 240px; }
+      .sign-up-form .form-wrapper .form .form-body-wrapper {
+        padding: 28px 20px 32px; }
+      .sign-up-form .form-wrapper .form .form-body {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding: 24px 20px 18px; }
+        .sign-up-form .form-wrapper .form .form-body .form-title {
+          margin-top: 0; }
   /**/ }
 
 /* Custom, iPhone Retina */
