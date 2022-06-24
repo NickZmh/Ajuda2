@@ -369,14 +369,15 @@ header {
   .team .teams-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .team .teams-list .item-list {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
       max-width: 320px;
-      margin-bottom: 30px; }
+      margin-bottom: 50px; }
       .team .teams-list .item-list img {
         width: 210px;
         margin-bottom: 20px;
@@ -407,7 +408,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 160px; }
+    margin-top: 120px; }
     .team .tile-wrapper .tile-body {
       display: flex;
       flex-direction: row;
@@ -797,6 +798,14 @@ footer {
     max-width: 50%; }
     .main.common .media-section.image img {
       max-width: 480px; }
+  .team .teams-list .item-list {
+    align-items: center;
+    max-width: 318px; }
+    .team .teams-list .item-list .description {
+      text-align: center; }
+  .team .middle-main-title {
+    text-align: center;
+    margin-bottom: 60px; }
   .vendors {
     padding-bottom: 100px; }
     .vendors .wrapper-content {
@@ -924,6 +933,12 @@ footer {
           height: 160px; }
         .how-it-works .tiles-wrapper .tile .tile-body .smallest-title {
           margin-top: 30px; }
+  .team {
+    padding-bottom: 130px; }
+    .team .tile-wrapper {
+      margin-top: 100px; }
+      .team .tile-wrapper .tile-body .context-block {
+        max-width: 376px; }
   .benefits .content-block {
     min-width: 380px;
     position: relative;
@@ -1165,6 +1180,27 @@ footer {
     max-width: 100%; }
     .main.vendors .media-section.image img {
       max-width: 100%; }
+  .team .middle-main-title {
+    text-align: start; }
+  .team .teams-list {
+    justify-content: flex-start; }
+    .team .teams-list .item-list {
+      align-items: flex-start; }
+      .team .teams-list .item-list .description {
+        text-align: left; }
+  .team .tile-wrapper .tile-body {
+    flex-direction: column; }
+    .team .tile-wrapper .tile-body .middle-main-title {
+      margin-bottom: 30px; }
+    .team .tile-wrapper .tile-body .context-block {
+      margin-left: 0;
+      max-width: 265px; }
+      .team .tile-wrapper .tile-body .context-block .description {
+        text-align: center; }
+        .team .tile-wrapper .tile-body .context-block .description .next {
+          display: block; }
+      .team .tile-wrapper .tile-body .context-block .description + .description {
+        margin-top: 20px; }
   .sign-up-form.vendor::after {
     background-position-x: -10px; }
   .sign-up-form.employers .form-wrapper .form .text-block .middle-main-title {
@@ -1286,6 +1322,18 @@ footer {
   .sign-up-form .form-wrapper .form .text-block .middle-main-title {
     font-size: 34px;
     line-height: 40px; }
+  .team {
+    padding: 0 0 100px; }
+    .team .teams-list .item-list {
+      max-width: 365px; }
+      .team .teams-list .item-list .title {
+        font-size: 24px;
+        line-height: 28px; }
+      .team .teams-list .item-list .subtitle {
+        font-size: 16px;
+        line-height: 22px; }
+    .team .tile-wrapper {
+      margin-top: 20px; }
   footer {
     padding: 26px 0 30px; }
     footer .logo {
