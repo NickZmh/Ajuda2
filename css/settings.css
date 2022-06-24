@@ -103,6 +103,9 @@ img {
   .button.primary-blue {
     background-color: #3E06DE;
     letter-spacing: .02em; }
+    .button.primary-blue.hover-change:hover {
+      border: 1px solid #3E06DE;
+      color: #3E06DE; }
     .button.primary-blue img {
       margin-left: 6px; }
   .button.medium-blue {

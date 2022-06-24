@@ -57,6 +57,17 @@
 			max-width: 370px
 		.wrapper-content
 			align-items: flex-start
+		&.common
+			.wrapper-content
+				margin-bottom: 60px
+			.text-section
+				max-width: 50%
+				padding-right: 30px
+			.media-section
+				max-width: 50%
+				&.image
+					img
+						max-width: 480px
 	.vendors
 		padding-bottom: 100px
 		.wrapper-content
@@ -82,7 +93,7 @@
 							.smallest-title
 					//max-width: 246px
 					.tile-body
-						padding: 0 20px 35px
+						padding: 0 15px 35px
 
 
 	.benefits
@@ -143,10 +154,44 @@
 			.description
 				font-size: 26px
 				line-height: 30px
+		&.common
+			.wrapper-content
+				// flex-direction: column
+				.text-section
+					max-width: 100%	
+					padding-right: 0	
+				.middle-main-title
+					max-width: 380px
+				.description
+					max-width: 630px
+				.buttons-wrapper
+					margin-bottom: 0
+				.media-section
+					display: none
+					&.image
+						max-width: 100%
+						img
+							max-width: 100%
+		&.more
+			padding: 160px 0 140px
+			.wrapper-content
+				flex-direction: column
+				.text-section
+					max-width: 600px
+					margin-bottom: 60px
+					.description
+						max-width: 536px
+				.middle-main-title
+					max-width: 220px
+				.media-section
+					&.image
+						max-width: 600px
+				.media-section
+					display: flex
+					
 		.main-title
 			font-size: 52px
 			line-height: 56px
-
 		.media-section
 			&.video
 				//min-height: 280px
@@ -220,6 +265,9 @@
 				padding: 0 16px
 
 	.sign-up-form
+		&.employers
+			&::after
+					background-position-x: -26vw
 		.form-wrapper
 			.form
 				max-width: 474px
@@ -235,6 +283,8 @@
 								line-height: 27px
 				.form-body
 					padding: 0 38px
+
+
 
 
 @media only screen and (max-width : 900px)
@@ -379,6 +429,26 @@
 			.description
 				font-size: 24px
 				line-height: 28px
+		&.employers
+			&::after
+				background-image: url('../img/employers-bg-banner-xs.png')
+				background-size: cover
+		&.common
+			.wrapper-content
+				.buttons-wrapper
+					margin-bottom: 56px
+				.media-section
+					&.image
+						display: block
+		&.more
+			padding: 140px 0 120px
+			.wrapper-content
+				.media-section
+					&.image
+						max-width: 600px
+				.buttons-wrapper
+					margin-top: 24px
+					margin-bottom: 0
 		.smallest-title
 			font-size: 12px
 		.tiles-wrapper
@@ -433,13 +503,17 @@
 					position: relative
 					flex-direction: row
 					justify-content: space-between
+					align-items: flex-end
 					padding: 20px 30px
 					img
 						position: relative
-						top: -10px
+						top: initial
 						min-height: 140px
 						height: 140px
 					.smallest-title
+						display: flex
+						align-self: center
+						height: 100%
 						text-align: left
 						margin-top: 0
 						font-size: 18px
@@ -468,8 +542,19 @@
 			&.image
 				img
 					max-width: 100%
+					
+	
 
 	.sign-up-form
+		&.vendor
+			&::after
+				background-position-x: -10px
+		&.employers
+			.form-wrapper
+				.form
+					.text-block
+						.middle-main-title
+							max-width: 100%
 		.form-wrapper
 			.form
 				max-width: 100%
@@ -556,11 +641,21 @@
 			&::after
 				background-image: url("../img/vendors-bg-banner-xs.png")
 				background-position: bottom right
+				background-size: cover
 			.middle-main-title
 				max-width: 320px
 		&.common
-			.buttons-wrapper
-				margin-bottom: 40px
+			.wrapper-content
+				.middle-main-title
+					max-width: 276px
+				.buttons-wrapper
+					margin-bottom: 28px
+		&.more
+			padding: 100px 0 90px
+			&::after
+				background-image: url("../img/more-bg-image-xs.png")
+				background-position: top left
+				background-size: contain
 		.main-title
 			margin-bottom: 16px
 		.media-section
@@ -714,6 +809,16 @@
 			.middle-main-title
 				max-width: 276px
 				margin-bottom: 20px
+		&.more
+			padding: 80px 0 70px
+			.wrapper-content
+				.middle-main-title
+					max-width: 160px
+			.buttons-wrapper
+				.button
+					margin-bottom: 0!important
+			.media-section.group-images img
+				margin-bottom: 8px
 		.main-title
 			font-size: 46px
 			line-height: 50px
@@ -742,6 +847,7 @@
 				width: 110px
 
 	.how-it-works
+		padding-bottom: 50px
 		&.purple
 			&:after
 				background-image: url('../img/how-it-works-bg-snippet-xs.png')
@@ -755,21 +861,36 @@
 				background-position-y: 160px
 				top: 0
 				bottom: initial
+			&.second
+				&::after
+					background-image: url('../img/how-it-work-banner-snippet.png')
+					background-position-y: center
 			.tiles-wrapper
-				.tile .tile-body
-					.smallest-title
-						max-width: 156px!important
-					img
-						top: 17px
+				.tile 
+					.tile-body
+						padding: 20px 20px
+						.smallest-title
+							max-width: 200px
+							font-size: 14px
+						img
+							// top: 17px
+					&:nth-child(2)
+						.tile-body
+							.smallest-title
+								max-width: 142px
 		.tiles-wrapper
 			margin-top: 80px
+			flex-direction: column
+			align-items: center
 			.tile
+				max-width: 366px
 				.tile-body
 					img
-						top: 7px
+						// top: 7px
 						min-height: 105px
 						height: 105px
-
+		
+					
 	.our-partners
 		.middle-main-title
 			text-align: left
@@ -796,6 +917,11 @@
 				.form
 					.form-body-wrapper
 						background-color: $blue-medium
+		&.employers
+			.form-wrapper
+				.form
+					.form-body-wrapper
+						background-color: $blue-primary
 		.wrapper-block
 			padding: 0
 		.form-wrapper

@@ -127,6 +127,9 @@ img {
   .button.primary-blue {
     background-color: #3E06DE;
     letter-spacing: .02em; }
+    .button.primary-blue.hover-change:hover {
+      border: 1px solid #3E06DE;
+      color: #3E06DE; }
     .button.primary-blue img {
       margin-left: 6px; }
   .button.medium-blue {
@@ -270,7 +273,19 @@ header {
       font-weight: 500;
       font-size: 30px;
       line-height: 34px; }
+  .main > .container {
+    position: relative;
+    z-index: 50; }
+  .main.common .text-section {
+    max-width: 520px; }
+    .main.common .text-section .middle-main-title {
+      margin-bottom: 28px; }
+  .main.common .media-section.image img {
+    max-width: 580px; }
+  .main.common .wrapper-content {
+    margin-bottom: 40px; }
   .main .text-section {
+    width: 100%;
     max-width: 380px; }
   .main .smallest-title {
     position: relative;
@@ -294,6 +309,7 @@ header {
     max-width: 650px;
     min-height: 365px; }
   .main .media-section.image img {
+    width: 100%;
     max-width: 480px; }
   .main .tiles-wrapper {
     position: relative;
@@ -350,10 +366,58 @@ header {
     max-width: 420px;
     margin-bottom: 28px; }
   .vendors .wrapper-content {
-    z-index: 20;
-    margin-bottom: 40px; }
+    z-index: 20; }
   .vendors .media-section.image img {
     max-width: 650px; }
+
+.employers {
+  background-color: #E9F7FD; }
+  .employers::after {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url("../img/employers-bg-banner.png");
+    background-position: top right;
+    background-size: cover; }
+  .employers .text-section .middle-main-title {
+    color: #1585ff; }
+
+.main.more {
+  padding: 180px 0;
+  background-color: #FF99D8; }
+  .main.more::after {
+    background-image: url("../img/more-bg-image.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .main.more .smallest-title,
+  .main.more .middle-main-title,
+  .main.more .description {
+    color: #fff; }
+  .main.more .wrapper-content {
+    align-items: center;
+    margin-bottom: 0 !important; }
+    .main.more .wrapper-content .text-section {
+      max-width: 470px; }
+  .main.more .middle-main-title {
+    margin-bottom: 20px;
+    max-width: 240px; }
+  .main.more .media-section {
+    max-width: 100%; }
+    .main.more .media-section.group-images {
+      display: flex;
+      flex-direction: column; }
+      .main.more .media-section.group-images img {
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+        display: block;
+        margin-bottom: 14px; }
+        .main.more .media-section.group-images img:last-of-type {
+          margin-bottom: 0; }
 
 .top_mnu {
   display: none; }
@@ -499,20 +563,31 @@ header {
     width: 100%;
     height: 100%;
     background-size: cover; }
+  .sign-up-form.vendor .form .form-body .form-title {
+    color: #1585ff; }
+  .sign-up-form.vendor .form .text-block .smallest-title,
+  .sign-up-form.vendor .form .text-block .middle-main-title {
+    color: #1585ff; }
+  .sign-up-form.vendor .form .text-block .list-benefits li .icon path {
+    stroke: #1585ff; }
+  .sign-up-form.employers::after {
+    background-image: url("../img/sign-up-employer-bg.jpg"); }
+  .sign-up-form.employers .form .form-body .form-title {
+    color: #3E06DE; }
+  .sign-up-form.employers .form .text-block .smallest-title,
+  .sign-up-form.employers .form .text-block .middle-main-title {
+    color: #3E06DE; }
+  .sign-up-form.employers .form .text-block .middle-main-title {
+    max-width: 250px; }
+  .sign-up-form.employers .form .text-block .list-benefits li .icon path {
+    stroke: #3E06DE; }
   .sign-up-form .form-wrapper .img-form-mobile {
     display: none; }
-  .sign-up-form .form-wrapper .form .form-body .form-title {
-    color: #1585ff; }
-  .sign-up-form .form-wrapper .form .text-block .smallest-title,
-  .sign-up-form .form-wrapper .form .text-block .middle-main-title {
-    color: #1585ff; }
   .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon {
-    width: 24px; }
+    min-width: 24px; }
     .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon svg {
       width: 100%;
       height: 100%; }
-    .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon path {
-      stroke: #1585ff; }
   .sign-up-form .form-wrapper {
     position: relative;
     z-index: 150; }
@@ -531,7 +606,7 @@ header {
         .sign-up-form .form-wrapper .form .text-block .list-benefits li {
           display: flex;
           flex-direction: row;
-          align-items: center;
+          align-items: flex-start;
           margin-bottom: 8px; }
           .sign-up-form .form-wrapper .form .text-block .list-benefits li .icon svg {
             display: block; }
@@ -631,6 +706,15 @@ footer {
     max-width: 370px; }
   .main .wrapper-content {
     align-items: flex-start; }
+  .main.common .wrapper-content {
+    margin-bottom: 60px; }
+  .main.common .text-section {
+    max-width: 50%;
+    padding-right: 30px; }
+  .main.common .media-section {
+    max-width: 50%; }
+    .main.common .media-section.image img {
+      max-width: 480px; }
   .vendors {
     padding-bottom: 100px; }
     .vendors .wrapper-content {
@@ -645,7 +729,7 @@ footer {
     .vendors .button-wrapper {
       margin-top: 36px; }
   .how-it-works.yellow .tiles-wrapper .tile .tile-body {
-    padding: 0 20px 35px; }
+    padding: 0 15px 35px; }
   .benefits .content-block {
     min-width: 440px;
     padding: 140px 0 140px; }
@@ -685,6 +769,36 @@ footer {
   .main.home .description {
     font-size: 26px;
     line-height: 30px; }
+  .main.common .wrapper-content .text-section {
+    max-width: 100%;
+    padding-right: 0; }
+  .main.common .wrapper-content .middle-main-title {
+    max-width: 380px; }
+  .main.common .wrapper-content .description {
+    max-width: 630px; }
+  .main.common .wrapper-content .buttons-wrapper {
+    margin-bottom: 0; }
+  .main.common .wrapper-content .media-section {
+    display: none; }
+    .main.common .wrapper-content .media-section.image {
+      max-width: 100%; }
+      .main.common .wrapper-content .media-section.image img {
+        max-width: 100%; }
+  .main.more {
+    padding: 160px 0 140px; }
+    .main.more .wrapper-content {
+      flex-direction: column; }
+      .main.more .wrapper-content .text-section {
+        max-width: 600px;
+        margin-bottom: 60px; }
+        .main.more .wrapper-content .text-section .description {
+          max-width: 536px; }
+      .main.more .wrapper-content .middle-main-title {
+        max-width: 220px; }
+      .main.more .wrapper-content .media-section.image {
+        max-width: 600px; }
+      .main.more .wrapper-content .media-section {
+        display: flex; }
   .main .main-title {
     font-size: 52px;
     line-height: 56px; }
@@ -740,6 +854,8 @@ footer {
     margin-right: -16px; }
     .our-partners .grid-section .grid-item {
       padding: 0 16px; }
+  .sign-up-form.employers::after {
+    background-position-x: -26vw; }
   .sign-up-form .form-wrapper .form {
     max-width: 474px;
     padding: 48px 0 30px; }
@@ -873,6 +989,20 @@ footer {
     .main.home .description {
       font-size: 24px;
       line-height: 28px; }
+    .main.employers::after {
+      background-image: url("../img/employers-bg-banner-xs.png");
+      background-size: cover; }
+    .main.common .wrapper-content .buttons-wrapper {
+      margin-bottom: 56px; }
+    .main.common .wrapper-content .media-section.image {
+      display: block; }
+    .main.more {
+      padding: 140px 0 120px; }
+      .main.more .wrapper-content .media-section.image {
+        max-width: 600px; }
+      .main.more .wrapper-content .buttons-wrapper {
+        margin-top: 24px;
+        margin-bottom: 0; }
     .main .smallest-title {
       font-size: 12px; }
     .main .tiles-wrapper {
@@ -918,13 +1048,17 @@ footer {
         position: relative;
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-end;
         padding: 20px 30px; }
         .how-it-works .tiles-wrapper .tile .tile-body img {
           position: relative;
-          top: -10px;
+          top: initial;
           min-height: 140px;
           height: 140px; }
         .how-it-works .tiles-wrapper .tile .tile-body .smallest-title {
+          display: flex;
+          align-self: center;
+          height: 100%;
           text-align: left;
           margin-top: 0;
           font-size: 18px;
@@ -949,6 +1083,10 @@ footer {
     max-width: 100%; }
     .main.vendors .media-section.image img {
       max-width: 100%; }
+  .sign-up-form.vendor::after {
+    background-position-x: -10px; }
+  .sign-up-form.employers .form-wrapper .form .text-block .middle-main-title {
+    max-width: 100%; }
   .sign-up-form .form-wrapper .form {
     max-width: 100%; }
     .sign-up-form .form-wrapper .form .text-block .middle-main-title {
@@ -1001,11 +1139,20 @@ footer {
         max-width: 148px; }
     .main.vendors::after {
       background-image: url("../img/vendors-bg-banner-xs.png");
-      background-position: bottom right; }
+      background-position: bottom right;
+      background-size: cover; }
     .main.vendors .middle-main-title {
       max-width: 320px; }
-    .main.common .buttons-wrapper {
-      margin-bottom: 40px; }
+    .main.common .wrapper-content .middle-main-title {
+      max-width: 276px; }
+    .main.common .wrapper-content .buttons-wrapper {
+      margin-bottom: 28px; }
+    .main.more {
+      padding: 100px 0 90px; }
+      .main.more::after {
+        background-image: url("../img/more-bg-image-xs.png");
+        background-position: top left;
+        background-size: contain; }
     .main .main-title {
       margin-bottom: 16px; }
     .main .media-section.video {
@@ -1128,6 +1275,14 @@ footer {
     .main.vendors .middle-main-title {
       max-width: 276px;
       margin-bottom: 20px; }
+    .main.more {
+      padding: 80px 0 70px; }
+      .main.more .wrapper-content .middle-main-title {
+        max-width: 160px; }
+      .main.more .buttons-wrapper .button {
+        margin-bottom: 0 !important; }
+      .main.more .media-section.group-images img {
+        margin-bottom: 8px; }
     .main .main-title {
       font-size: 46px;
       line-height: 50px; }
@@ -1149,27 +1304,38 @@ footer {
   .benefits .form-block .img-snippet {
     top: -156px;
     width: 110px; }
-  .how-it-works.purple:after {
-    background-image: url("../img/how-it-works-bg-snippet-xs.png");
-    background-position: center right;
-    top: 0;
-    bottom: initial; }
-  .how-it-works.yellow:after {
-    background-image: url("../img/how-it-works-bg-yellow-snippet-xs.png");
-    background-position: bottom right;
-    background-position-y: 160px;
-    top: 0;
-    bottom: initial; }
-  .how-it-works.yellow .tiles-wrapper .tile .tile-body .smallest-title {
-    max-width: 156px !important; }
-  .how-it-works.yellow .tiles-wrapper .tile .tile-body img {
-    top: 17px; }
-  .how-it-works .tiles-wrapper {
-    margin-top: 80px; }
-    .how-it-works .tiles-wrapper .tile .tile-body img {
-      top: 7px;
-      min-height: 105px;
-      height: 105px; }
+  .how-it-works {
+    padding-bottom: 50px; }
+    .how-it-works.purple:after {
+      background-image: url("../img/how-it-works-bg-snippet-xs.png");
+      background-position: center right;
+      top: 0;
+      bottom: initial; }
+    .how-it-works.yellow:after {
+      background-image: url("../img/how-it-works-bg-yellow-snippet-xs.png");
+      background-position: bottom right;
+      background-position-y: 160px;
+      top: 0;
+      bottom: initial; }
+    .how-it-works.yellow.second::after {
+      background-image: url("../img/how-it-work-banner-snippet.png");
+      background-position-y: center; }
+    .how-it-works.yellow .tiles-wrapper .tile .tile-body {
+      padding: 20px 20px; }
+      .how-it-works.yellow .tiles-wrapper .tile .tile-body .smallest-title {
+        max-width: 200px;
+        font-size: 14px; }
+    .how-it-works.yellow .tiles-wrapper .tile:nth-child(2) .tile-body .smallest-title {
+      max-width: 142px; }
+    .how-it-works .tiles-wrapper {
+      margin-top: 80px;
+      flex-direction: column;
+      align-items: center; }
+      .how-it-works .tiles-wrapper .tile {
+        max-width: 366px; }
+        .how-it-works .tiles-wrapper .tile .tile-body img {
+          min-height: 105px;
+          height: 105px; }
   .our-partners .middle-main-title {
     text-align: left;
     width: 100%; }
@@ -1187,6 +1353,8 @@ footer {
     padding: 0; }
     .sign-up-form.vendor .form-wrapper .form .form-body-wrapper {
       background-color: #1585ff; }
+    .sign-up-form.employers .form-wrapper .form .form-body-wrapper {
+      background-color: #3E06DE; }
     .sign-up-form .wrapper-block {
       padding: 0; }
     .sign-up-form .form-wrapper .img-form-mobile {
