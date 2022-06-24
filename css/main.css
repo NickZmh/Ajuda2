@@ -238,10 +238,24 @@ header {
   padding: 36px 0;
   background-color: transparent;
   position: absolute;
-  z-index: 1000; }
+  z-index: 1000;
+  position: fixed; }
+  header.sticky-header {
+    transition: all .4s ease-in-out; }
+    header.sticky-header.sticky {
+      padding: 26px 0 22px;
+      background-color: #fff;
+      box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05);
+      transition: all .4s ease-in-out; }
+      header.sticky-header.sticky .wrapper-line .logo {
+        max-width: 109px; }
+      header.sticky-header.sticky .nav-menu li a {
+        font-size: 11px; }
+  header .animation {
+    transition: all .4s ease-in-out; }
   header .logo {
     display: inline-block;
-    max-width: 157px; }
+    max-width: 144px; }
   header .wrapper-line {
     display: flex;
     justify-content: space-between;
@@ -364,6 +378,17 @@ header {
 
 .team {
   padding: 24px 0 160px; }
+  .team::after {
+    background-image: url("../img/team-bg-snippet.png");
+    background-size: cover;
+    background-position: center top;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .team > .container {
+    position: relative;
+    z-index: 25; }
   .team .middle-main-title {
     margin-bottom: 48px; }
   .team .teams-list {
@@ -1001,8 +1026,27 @@ footer {
       .features .features-item .features-item-body .text {
         font-size: 20px;
         line-height: 24px; }
-  header .nav-menu {
-    display: none; }
+  header {
+    padding: 32px 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05);
+    padding: 12px 0; }
+    header.sticky-header {
+      transition: all .4s ease-in-out; }
+      header.sticky-header.sticky {
+        padding: 18px 0 21px;
+        background-color: #fff;
+        transition: all .4s ease-in-out; }
+        header.sticky-header.sticky .wrapper-line .logo {
+          max-width: 108px; }
+        header.sticky-header.sticky .menu-button {
+          font-size: 14px; }
+    header .logo {
+      max-width: 100px; }
+    header .nav-menu {
+      display: none; }
+    header .wrapper-line {
+      align-items: center; }
   .top_mnu {
     position: fixed;
     top: 0;
@@ -1243,10 +1287,23 @@ footer {
           line-height: 22px; }
   header {
     padding: 12px 0; }
+    header.sticky-header {
+      transition: all .4s ease-in-out; }
+      header.sticky-header.sticky {
+        padding: 13px 0 15px;
+        background-color: #fff;
+        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05);
+        transition: all .4s ease-in-out; }
+        header.sticky-header.sticky .wrapper-line .logo {
+          max-width: 100px; }
+        header.sticky-header.sticky .menu-button {
+          font-size: 13px; }
     header .logo {
-      max-width: 101px; }
+      max-width: 92px; }
     header .wrapper-line {
       align-items: center; }
+    header .menu-button {
+      font-size: 12px; }
   .main {
     padding: 160px 0 90px; }
     .main.home::after {
@@ -1277,6 +1334,8 @@ footer {
       padding-top: 100px; }
       .main.about-us .wrapper-content .media-section.image {
         display: none; }
+      .main.about-us .wrapper-content .text-section {
+        margin-bottom: 0; }
     .main .main-title {
       margin-bottom: 16px; }
     .main .media-section.video {
@@ -1323,7 +1382,10 @@ footer {
     font-size: 34px;
     line-height: 40px; }
   .team {
-    padding: 0 0 100px; }
+    padding: 10px 0 100px; }
+    .team::after {
+      background-image: url("../img/team-bg-snippet-xs.png");
+      top: -130px; }
     .team .teams-list .item-list {
       max-width: 365px; }
       .team .teams-list .item-list .title {
@@ -1332,6 +1394,8 @@ footer {
       .team .teams-list .item-list .subtitle {
         font-size: 16px;
         line-height: 22px; }
+    .team .middle-main-title {
+      margin-bottom: 24px; }
     .team .tile-wrapper {
       margin-top: 20px; }
   footer {

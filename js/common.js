@@ -28,6 +28,17 @@ $(document).ready(function() {
 	});
 
 
+	var stickyHeader = jQuery('.sticky-header');
+
+    jQuery(window).scroll(function() {
+        if( stickyHeader.offset().top > 0 ) {
+            stickyHeader.addClass('sticky')
+        } else {
+            stickyHeader.removeClass('sticky')
+        }
+    });
+
+
 });
 
 

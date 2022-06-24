@@ -338,6 +338,7 @@
 	.standard-p-block
 		padding: 120px 0 100px
 
+
 	.features
 		.features-item
 			max-width: 42%
@@ -362,8 +363,27 @@
 
 	//common styles page
 	header
+		padding: 32px 0
+		background-color: #fff
+		box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05)
+		padding: 12px 0
+		&.sticky-header
+			transition: all .4s ease-in-out
+			&.sticky
+				padding: 18px 0 21px
+				background-color: #fff
+				transition: all .4s ease-in-out
+				.wrapper-line
+					.logo
+						max-width: 108px
+				.menu-button
+							font-size: 14px
+		.logo
+			max-width: 100px
 		.nav-menu
 			display: none
+		.wrapper-line
+			align-items: center
 
 
 	.top_mnu
@@ -671,10 +691,24 @@
 
 	header
 		padding: 12px 0
+		&.sticky-header
+			transition: all .4s ease-in-out
+			&.sticky
+				padding: 13px 0 15px
+				background-color: #fff
+				box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05)
+				transition: all .4s ease-in-out
+				.wrapper-line
+					.logo
+						max-width: 100px
+				.menu-button
+							font-size: 13px
 		.logo
-			max-width: 101px
+			max-width: 92px
 		.wrapper-line
 			align-items: center
+		.menu-button
+			font-size: 12px
 	.main
 		padding: 160px 0 90px
 		&.home
@@ -711,13 +745,14 @@
 			.wrapper-content
 				.media-section.image
 					display: none
+				.text-section
+					margin-bottom: 0
 		.main-title
 			margin-bottom: 16px
 		.media-section
 			&.video
 				min-height: 240px
 				height: 240px
-		
 		.buttons-wrapper
 			margin-top: 30px
 			
@@ -772,7 +807,10 @@
 						line-height: 40px
 
 	.team 
-		padding: 0 0 100px
+		padding: 10px 0 100px
+		&::after
+			background-image: url('../img/team-bg-snippet-xs.png')
+			top: -130px
 		.teams-list 
 			.item-list
 				max-width: 365px
@@ -782,6 +820,8 @@
 				.subtitle
 					font-size: 16px
 					line-height: 22px
+		.middle-main-title
+			margin-bottom: 24px
 		.tile-wrapper
 			margin-top: 20px
 

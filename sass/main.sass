@@ -55,9 +55,26 @@ header
 	background-color: transparent
 	position: absolute
 	z-index: 1000
+	position: fixed
+	&.sticky-header
+		transition: all .4s ease-in-out
+		&.sticky
+			padding: 26px 0 22px
+			background-color: #fff
+			box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05)
+			transition: all .4s ease-in-out
+			.wrapper-line
+				.logo
+					max-width: 109px
+			.nav-menu
+				li
+					a
+						font-size: 11px
+	.animation
+		transition: all .4s ease-in-out
 	.logo
 		display: inline-block
-		max-width: 157px
+		max-width: 144px
 	.wrapper-line
 		display: flex
 		justify-content: space-between
@@ -186,6 +203,17 @@ header
 
 .team
 	padding: 24px 0 160px
+	&::after
+		background-image: url('../img/team-bg-snippet.png')
+		background-size: cover
+		background-position: center top
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	>.container
+		position: relative
+		z-index: 25
 	.middle-main-title
 		margin-bottom: 48px
 	.teams-list	
@@ -615,3 +643,10 @@ footer
 //ALWAYS END
 @import "media"
 
+
+
+
+
+
+
+// 
