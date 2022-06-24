@@ -435,8 +435,10 @@
 				background-size: cover
 		&.common
 			.wrapper-content
-				.buttons-wrapper
+				.text-section
 					margin-bottom: 56px
+				.buttons-wrapper
+					
 				.media-section
 					&.image
 						display: block
@@ -649,21 +651,30 @@
 				.middle-main-title
 					max-width: 276px
 				.buttons-wrapper
-					margin-bottom: 28px
+					margin-bottom: 0
+				.text-section
+					margin-bottom: 40px
 		&.more
 			padding: 100px 0 90px
 			&::after
 				background-image: url("../img/more-bg-image-xs.png")
 				background-position: top left
 				background-size: contain
+		&.about-us
+			padding-top: 100px
+			.wrapper-content
+				.media-section.image
+					display: none
 		.main-title
 			margin-bottom: 16px
 		.media-section
 			&.video
 				min-height: 240px
 				height: 240px
+		
 		.buttons-wrapper
 			margin-top: 30px
+			
 
 	.benefits
 		.content-block
@@ -831,8 +842,8 @@
 			margin-top: 30px
 			.button
 				margin-right: 0
-				&:first-of-type
-					margin-bottom: 12px
+			.button + .button
+				margin-top: 12px	
 
 
 	.benefits
@@ -973,7 +984,6 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
 	/**/
-
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)

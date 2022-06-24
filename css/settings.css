@@ -17,6 +17,12 @@ img {
   max-width: 100%;
   display: block; }
 
+.blue-primary-color {
+  color: #3E06DE; }
+
+.pink-color {
+  color: #ff009e; }
+
 .main-title {
   font-family: 'AvantGarde Bold', sans-serif;
   font-weight: 700;

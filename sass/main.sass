@@ -70,6 +70,8 @@ header
 		line-height: 18px
 		color: $blue-primary
 
+.about-us-background
+	background-color:  #ECE6FC
 
 
 .main
@@ -105,9 +107,12 @@ header
 			max-width: 520px
 			.middle-main-title
 				margin-bottom: 28px
+			.description + .description
+				margin-top: 16px
 		.media-section
 			&.image img
 				max-width: 580px
+				border-radius: 10px
 		.wrapper-content
 			margin-bottom: 40px
 	.text-section
@@ -178,6 +183,76 @@ header
 		display: flex
 		flex-direction: row
 		justify-content: space-between
+
+.team
+	padding: 24px 0 160px
+	.middle-main-title
+		margin-bottom: 48px
+	.teams-list	
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		.item-list
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			width: 100%
+			max-width: 320px
+			margin-bottom: 30px
+			img
+				width: 210px
+				margin-bottom: 20px
+				box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05)
+				border-radius: 10px
+				overflow: hidden
+			.title
+				font-family: 'Avenir Bold', sans-serif
+				font-weight: 700
+				font-size: 30px
+				line-height: 34px
+				letter-spacing: 0.02em
+			.subtitle
+				font-family: 'Avenir Medium', sans-serif
+    			font-weight: 500
+				font-size: 16px
+				line-height: 22px
+				letter-spacing: .02em
+				color: $black-color
+			.description
+				font-family: 'Avenir Regular', sans-serif
+    			font-weight: 400
+				font-size: 14px
+				line-height: 20px
+				letter-spacing: 0.01em
+				margin-top: 20px
+	.tile-wrapper
+		display: flex
+		flex-direction: row
+		justify-content: center
+		margin-top: 160px
+		.tile-body
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			width: 100%
+			max-width: 880px
+			background-color: #fff
+			border-radius: 10px
+			box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.05)
+			.middle-main-title
+				margin-bottom: 0
+			padding: 54px 52px
+			.context-block
+				margin-left: 30px
+				max-width: 440px
+				.description
+					line-height: 24px
+					font-family: 'Avenir Medium', sans-serif
+    				font-weight: 500
+					letter-spacing: 0.02em
+					& + .description
+						margin-top: 16px
 
 .vendors
 	background-color: #ECE6FC
